@@ -334,4 +334,4 @@ BBOalert,BFUN
 1N,3D,5-5 !H/!S or 7+!S
 1N,3H,5-5 !S/!C or 7+!C
 
-Button,Hello,Hi! 1C 16+, 1NT 13-15, 4-card majors, canape (two-suiters open with secondary suit first), UDA
+Button,Hello,Hi! 1C 16+, 1NT 13-15 balanced, 4-card majors, canape (two-suiters open with secondary suit first), UDA
