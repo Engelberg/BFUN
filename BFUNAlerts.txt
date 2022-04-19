@@ -1,4 +1,4 @@
-BBOalert
+BBOalert,BFUN
 ,1C,Artificial 16+ pts,20220418_20:49 Deal 15 robbef
 ,1D,11-15 pts; 4+!D
 ,1H,11-15 pts; 4+!H
@@ -16,7 +16,6 @@ BBOalert
 ,3N,6-5 !C/!D or 8+!D
 ,4C,6-5 !D/!H or 8+!H
 ,4D,6-5 !H/!S or 8+!S
-,4H,6-5 !H/!S or 8+!C
 
 1H--,2H,4-card support; minimal game interest
 1H--2H--,3C,game invite; primary suit !C
@@ -238,7 +237,7 @@ BBOalert
 1C--2D--2H--,3D,Artificial: 3!S 4!H 2!D 4!C
 1C--2D--2H--,3H,Artificial: 4!S 2!H 4!D 3!C
 1C--2D--2H--,3S,Artificial: 2!S 4!H 3!D 4!C
-1C--2D--2H--,3NT,Artificial: 4!S 3!H 4!D 2!C
+1C--2D--2H--,3N,Artificial: 4!S 3!H 4!D 2!C
 1C--,2S,Artificial: 12-14 pts; 4-4-3-2 with 4-4 same color or 4-3-3-3
 1C--,2N,Artificial: 12-14 pts; 4-4-3-2 with 4-4 same rank
 1C--,3C,Artificial: 12-14 pts; 4-3-3-3 shape
@@ -259,3 +258,80 @@ BBOalert
 2D--,2N,Artificial relay bidding initiator; game force,20220418_19:58 Deal 9 robbef
 2D--2N--3S--,4C,Artificial; relay,20220418_20:05 Deal 9 robbef
 1C--1S--,1N,Relay,20220418_21:07 Deal 18 robbef
+
+1C,1D,11-15 pts; 4+!D
+1C,1H,11-15 pts; 4+!H
+1C,1S,11-15 pts; 4+!S
+1C,1N,13-15 pts; balanced
+1C,2C,Artificial: 11-15 pts; three-suiter (4-4-4-1 or 5-4-4-0)
+1C,2D,11-15 pts; 4+!C; 5+!D
+1C,2H,11-15 pts; 4+!C 5+!H
+1C,2S,11-15 pts; 4+!C 5+!S
+1C,2N,5-5 !C/!D or 7+!D
+1C,3C,5-5 !D/!H or 7+!H
+1C,3D,5-5 !H/!S or 7+!S
+1C,3H,5-5 !S/!C or 7+!C
+1C,3S,Transfer to Gambling 3NT (solid 7+ card suit)
+1C,3N,6-5 !C/!D or 8+!D
+1C,4C,6-5 !D/!H or 8+!H
+1C,4D,6-5 !H/!S or 8+!S
+
+1D,Db,Takeout double
+1D,1H,11-15 pts; 4+!H
+1D,1S,11-15 pts; 4+!S
+1D,1N,15-17 pts; balanced; likely !D stopper
+1D,2C,Standard overcall
+1D,2D,Michael's cuebid; !S and !H
+1D,2H,4+!C 5+!H
+1D,2S,4+!C 5+!S
+1D,2N,5-5 !C/!D or 7+!D
+1D,3C,5-5 !D/!H or 7+!H
+1D,3D,5-5 !H/!S or 7+!S
+1D,3H,5-5 !S/!C or 7+!C
+1D,3S,Transfer to Gambling 3NT (solid 7+ card suit)
+1D,3N,6-5 !C/!D or 8+!D
+1D,4C,6-5 !D/!H or 8+!H
+1D,4D,6-5 !H/!S or 8+!S
+
+1H,Db,Takeout double
+1H,1S,11-15 pts; 4+!S
+1H,1N,15-17 pts; balanced; likely !H stopper
+1H,2C,Standard overcall
+1H,2D,Standard overcall
+1H,2H,4+!D 5+!S
+1H,2S,4+!C 5+!S
+1H,2N,5-5 !C/!D or 7+!D
+1H,3C,5-5 !D/!H or 7+!H
+1H,3D,5-5 !H/!S or 7+!S
+1H,3H,5-5 !S/!C or 7+!C
+1H,3S,Transfer to Gambling 3NT (solid 7+ card suit)
+1H,3N,6-5 !C/!D or 8+!D
+1H,4C,6-5 !D/!H or 8+!H
+1H,4D,6-5 !H/!S or 8+!S
+
+1S,Db,Takeout double
+1S,1N,15-17 pts; balanced; likely !S stopper
+1S,2C,Standard overcall
+1S,2D,Standard overcall
+1S,2H,Standard overcall
+1S,2S,5+!H 5+!C
+1S,2N,5-5 !C/!D or 7+!D
+1S,3C,5-5 !D/!H or 7+!H
+1S,3D,5-5 !H/!S or 7+!S
+1S,3H,5-5 !S/!C or 7+!C
+1S,3S,Transfer to Gambling 3NT (solid 7+ card suit)
+1S,3N,6-5 !C/!D or 8+!D
+1S,4C,6-5 !D/!H or 8+!H
+1S,4D,6-5 !H/!S or 8+!S
+
+1N,Db,!D or both minors or non-touching two-suiter
+1N,2C,!H or both red suits
+1N,2D,!S or both majors
+1N,2H,!C or both black suits
+1N,2S,3-suited hand including spades
+1N,2N,5-5 !C/!D or 7+!D
+1N,3C,5-5 !D/!H or 7+!H
+1N,3D,5-5 !H/!S or 7+!S
+1N,3H,5-5 !S/!C or 7+!C
+
+Button,Hello,Hi! 1C 16+, 1NT 13-15, 4-card majors, canape (two-suiters open with secondary suit first), UDA
