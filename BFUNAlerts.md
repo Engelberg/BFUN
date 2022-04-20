@@ -204,6 +204,8 @@ BBOalert,BFUN
     1N--2C--2S--2N--,3H,5!S 3!H
     1N--2C--2S--2N--,3S,5!S 2!H
 
+## KK Relay
+    Option,KK Relay
     1C,Db,16+ pts,20220418_20:15 Deal 10 robbef
     1C--,1D,0-8 pts,20220418_19:20 Deal 5 robbef
     1C--,1H,Artificial: 9+ pts; 4+!S
