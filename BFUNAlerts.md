@@ -300,14 +300,13 @@ BBOalert,BFUN
     1D,2D,Michael's cuebid; !S and !H
     1D,2H,4+!C 5+!H
     1D,2S,4+!C 5+!S
-    1D,2N,5-5 !C/!D or 7+!D
-    1D,3C,5-5 !D/!H or 7+!H
-    1D,3D,5-5 !H/!S or 7+!S
-    1D,3H,5-5 !S/!C or 7+!C
+    1D,2N,5-5 !C/!H or 7+!H
+    1D,3C,5-5 !H/!S or 7+!S
+    1D,3D,5-5 !S/!C or 7+!C
     1D,3S,Transfer to Gambling 3NT (solid 7+ card suit)
-    1D,3N,6-5 !C/!D or 8+!D
-    1D,4C,6-5 !D/!H or 8+!H
-    1D,4D,6-5 !H/!S or 8+!S
+    1D,3N,6-5 !C/!H or 8+!H
+    1D,4C,6-5 !H/!S or 8+!S
+    1D,4D,6-5 !S/!C or 8+!C
 
     1H,Db,Takeout double
     1H,1S,11-15 pts; 4+!S
@@ -317,13 +316,12 @@ BBOalert,BFUN
     1H,2H,4+!D 5+!S
     1H,2S,4+!C 5+!S
     1H,2N,5-5 !C/!D or 7+!D
-    1H,3C,5-5 !D/!H or 7+!H
-    1H,3D,5-5 !H/!S or 7+!S
-    1H,3H,5-5 !S/!C or 7+!C
+    1H,3C,5-5 !D/!S or 7+!S
+    1H,3D,5-5 !S/!C or 7+!C
     1H,3S,Transfer to Gambling 3NT (solid 7+ card suit)
     1H,3N,6-5 !C/!D or 8+!D
-    1H,4C,6-5 !D/!H or 8+!H
-    1H,4D,6-5 !H/!S or 8+!S
+    1H,4C,6-5 !D/!S or 8+!S
+    1H,4D,6-5 !S/!C or 8+!C
 
     1S,Db,Takeout double
     1S,1N,15-17 pts; balanced; likely !S stopper
@@ -333,12 +331,11 @@ BBOalert,BFUN
     1S,2S,5+!H 5+!C
     1S,2N,5-5 !C/!D or 7+!D
     1S,3C,5-5 !D/!H or 7+!H
-    1S,3D,5-5 !H/!S or 7+!S
-    1S,3H,5-5 !S/!C or 7+!C
+    1S,3D,5-5 !H/!C or 7+!C
     1S,3S,Transfer to Gambling 3NT (solid 7+ card suit)
     1S,3N,6-5 !C/!D or 8+!D
     1S,4C,6-5 !D/!H or 8+!H
-    1S,4D,6-5 !H/!S or 8+!S
+    1S,4D,6-5 !H/!C or 8+!C
 
     1N,Db,!D or both minors or non-touching two-suiter
     1N,2C,!H or both red suits
