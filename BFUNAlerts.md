@@ -275,6 +275,7 @@ BBOalert,BFUN
 
 ## Overcalls
     Option,Overcalls
+    1C,Db,Artificial 16+ pts
     1C,1D,11-15 pts; 4+!D
     1C,1H,11-15 pts; 4+!H
     1C,1S,11-15 pts; 4+!S
