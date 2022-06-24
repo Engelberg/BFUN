@@ -17,14 +17,11 @@ BBOalert,BFUN
     ,2D,11-15 pts; 4+!C; 5+!D
     ,2H,11-15 pts; 4+!C 5+!H
     ,2S,11-15 pts; 4+!C 5+!S
-    ,2N,5-5 !C/!D or 7+!D
+    ,2N,5-5 !S/!D or 7+!D
     ,3C,5-5 !D/!H or 7+!H
     ,3D,5-5 !H/!S or 7+!S
-    ,3H,5-5 !S/!C or 7+!C
     ,3S,Transfer to Gambling 3NT (solid 7+ card suit)
-    ,3N,6-5 !C/!D or 8+!D
-    ,4C,6-5 !D/!H or 8+!H
-    ,4D,6-5 !H/!S or 8+!S
+    ,3N,8+!C or 8+!D
 
     Untrusted
 
@@ -101,10 +98,10 @@ BBOalert,BFUN
     1D--1H--,2S,5+!S; denies 3!H; 14-15 pts
     1D--1S--,2H,5+!H; denies 3!S; 11-13 pts
     1D--1S--,3H,5+!H; denies 3!S; 14-15 pts
-    1D--1H--,2D,5+!D; denies 3!H; 11-13 pts
-    1D--1H--,3D,5+!D; denies 3!H; 14-15 pts
-    1D--1S--,2D,5+!D; denies 3!S; 11-13 pts
-    1D--1S--,3D,5+!D; denies 3!S; 14-15 pts
+    1D--1H--,2D,6+!D; denies 3!H; 11-13 pts
+    1D--1H--,3D,6+!D; denies 3!H; 14-15 pts
+    1D--1S--,2D,6+!D; denies 3!S; 11-13 pts
+    1D--1S--,3D,6+!D; denies 3!S; 14-15 pts
     1D--1[HS]--,2C,4+!D 5+!C; 11-13 pts
     1D--1[HS]--,3C,4+!D 5+!C; 14-15 pts
     1D--,1N,8-11 pts; denies 4-card major
@@ -281,62 +278,53 @@ BBOalert,BFUN
     1C,1S,11-15 pts; 4+!S
     1C,1N,13-15 pts; balanced
     1C,2C,Artificial: 11-15 pts; three-suiter (4-4-4-1 or 5-4-4-0)
-    1C,2D,11-15 pts; 4+!C; 5+!D
+    1C,2D,11-15 pts; 4+!C 5+!D
     1C,2H,11-15 pts; 4+!C 5+!H
     1C,2S,11-15 pts; 4+!C 5+!S
-    1C,2N,5-5 !C/!D or 7+!D
+    1C,2N,5-5 !S/!D or 7+!D
     1C,3C,5-5 !D/!H or 7+!H
     1C,3D,5-5 !H/!S or 7+!S
-    1C,3H,5-5 !S/!C or 7+!C
     1C,3S,Transfer to Gambling 3NT (solid 7+ card suit)
-    1C,3N,6-5 !C/!D or 8+!D
-    1C,4C,6-5 !D/!H or 8+!H
-    1C,4D,6-5 !H/!S or 8+!S
+    1C,3N,8+!C or 8+!D
 
-    1D,Db,Takeout double
+    1D,Db,Artificial 16+ pts
     1D,1H,11-15 pts; 4+!H
     1D,1S,11-15 pts; 4+!S
-    1D,1N,15-17 pts; balanced; likely !D stopper
-    1D,2C,Standard overcall
-    1D,2D,Michael's cuebid; !S and !H
+    1D,1N,13-15 pts; balanced; likely !D stopper
+    1D,2C,Artificial: three suiter (4-4-4-1 or 5-4-4-0)
+    1D,2D,4+!C 5+!D
     1D,2H,4+!C 5+!H
     1D,2S,4+!C 5+!S
-    1D,2N,5-5 !C/!H or 7+!H
-    1D,3C,5-5 !H/!S or 7+!S
-    1D,3D,5-5 !S/!C or 7+!C
+    1D,2N,5-5 !S/!D or 7+!D
+    1D,3C,5-5 !D/!H or 7+!H
+    1D,3D,5-5 !H/!S or 7+!S
     1D,3S,Transfer to Gambling 3NT (solid 7+ card suit)
-    1D,3N,6-5 !C/!H or 8+!H
-    1D,4C,6-5 !H/!S or 8+!S
-    1D,4D,6-5 !S/!C or 8+!C
+    1D,3N,8+!C or 8+!D
 
-    1H,Db,Takeout double
-    1H,1S,11-15 pts; 4+!S
-    1H,1N,15-17 pts; balanced; likely !H stopper
-    1H,2C,Standard overcall
-    1H,2D,Standard overcall
-    1H,2H,4+!D 5+!S
+    1H,Db,Interest in competing
+    1H,1S,4+!S
+    1H,1N,13+ pts; balanced; likely !H stopper
+    1H,2C,Artificial: three suiter (4-4-4-1 or 5-4-4-0)
+    1H,2D,4+!C 5+!D
+    1H,2H,4+!C 5+!H
     1H,2S,4+!C 5+!S
-    1H,2N,5-5 !C/!D or 7+!D
-    1H,3C,5-5 !D/!S or 7+!S
-    1H,3D,5-5 !S/!C or 7+!C
+    1H,2N,5-5 !S/!D or 7+!D
+    1H,3C,5-5 !D/!H or 7+!H
+    1H,3D,5-5 !H/!S or 7+!S
     1H,3S,Transfer to Gambling 3NT (solid 7+ card suit)
-    1H,3N,6-5 !C/!D or 8+!D
-    1H,4C,6-5 !D/!S or 8+!S
-    1H,4D,6-5 !S/!C or 8+!C
+    1H,3N,8+!C or 8+!D
 
-    1S,Db,Takeout double
-    1S,1N,15-17 pts; balanced; likely !S stopper
-    1S,2C,Standard overcall
-    1S,2D,Standard overcall
-    1S,2H,Standard overcall
-    1S,2S,5+!H 5+!C
-    1S,2N,5-5 !C/!D or 7+!D
+    1S,Db,Interest in competing
+    1S,1N,13+ pts; balanced; likely !S stopper
+    1S,2C,Artificial: three suiter (4-4-4-1 or 5-4-4-0)
+    1S,2D,4+!C 5+!D
+    1S,2H,4+!C 5+!H
+    1S,2S,4+!C 5+!S
+    1S,2N,5-5 !S/!D or 7+!D
     1S,3C,5-5 !D/!H or 7+!H
-    1S,3D,5-5 !H/!C or 7+!C
+    1S,3D,5-5 !H/!S or 7+!S
     1S,3S,Transfer to Gambling 3NT (solid 7+ card suit)
-    1S,3N,6-5 !C/!D or 8+!D
-    1S,4C,6-5 !D/!H or 8+!H
-    1S,4D,6-5 !H/!C or 8+!C
+    1S,3N,8+C or 8+!D
 
     1N,Db,!D or both minors or non-touching two-suiter
     1N,2C,!H or both red suits
