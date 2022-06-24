@@ -104,7 +104,7 @@ BBOalert,BFUN
     1D--1S--,3D,6+!D; denies 3!S; 14-15 pts
     1D--1[HS]--,2C,4+!D 5+!C; 11-13 pts
     1D--1[HS]--,3C,4+!D 5+!C; 14-15 pts
-    1D--,1N,8-11 pts; denies 4-card major
+    1D--,1N,8-11 pts; denies 4-card major; forcing
     1D--1N--,2H,5+!H; 11-13 pts
     1D--1N--,2S,5+!S; 11-13 pts
     1D--1N--,3H,5+!H; 14-15 pts
