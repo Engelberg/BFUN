@@ -413,5 +413,3 @@ BBOalert,Precision
     2D2[HS]2N--,3N,14-15 pts; 4!S 4!H 0!D 5!C
     2D2[HS]2N--3[DHSN]--,4D,artificial ask for control points
 
-    Option,Recorded OFF
-    Option,Recorded ON
