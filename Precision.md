@@ -342,7 +342,7 @@ BBOalert,Precision
     1CDb3S--,4H,5+!H
     1CDb3S--,4S,5+!S
 
-    1D--,2D,inverted minor; 10+ pts; 5+!D
+    1D--,2D,inverted minor; 11+ pts; 5+!D
     1D--,3D,preemptive raise in diamonds; 0-7 pts
 
     1[HS]--,1N,forcing
