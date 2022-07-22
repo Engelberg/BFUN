@@ -14,7 +14,7 @@ BBOalert,Precision
     ,1S,11-15 pts; 5+!S
     ,1N,14-16 pts; balanced
     ,2C,Artificial: 11-15 pts; 6+!C
-    ,2D,11-15 pts; three-suited with short diamonds
+    ,2D,Artificial: 11-15 pts; three-suited with short diamonds
     ,2H,weak preempt; 5-6!H
     ,2S,weak preempt; 5-6!S
     ,2N,22-23 pts; balanced
