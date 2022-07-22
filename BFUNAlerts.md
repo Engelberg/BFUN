@@ -7,7 +7,7 @@ BBOalert,BFUN
 
 ## Openings
 
-    Option,BFUN system
+    Option,BFUN system,enigmisto+RobbEf
     ,1C,Artificial 16+ pts,20220418_20:49 Deal 15 robbef
     ,1D,11-15 pts; 4+!D
     ,1H,11-15 pts; 4+!H
