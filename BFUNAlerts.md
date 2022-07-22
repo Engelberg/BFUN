@@ -202,7 +202,7 @@ BBOalert,BFUN
     1N--2C--2S--2N--,3S,5!S 2!H
 
 ## KK Relay
-    Option,KK Relay
+    Option,KK Relay,enigmisto+RobbEf
     1C,Db,16+ pts,20220418_20:15 Deal 10 robbef
     1C--,1D,0-8 pts,20220418_19:20 Deal 5 robbef
     1C--,1H,Artificial: 9+ pts; 4+!S
@@ -271,7 +271,7 @@ BBOalert,BFUN
     1C--1S--,1N,Relay,20220418_21:07 Deal 18 robbef
 
 ## Overcalls
-    Option,Overcalls
+    Option,Overcalls,enigmisto+RobbEf
     1C,Db,Artificial 16+ pts
     1C,1D,11-15 pts; 4+!D
     1C,1H,11-15 pts; 4+!H
