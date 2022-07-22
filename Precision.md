@@ -1,7 +1,7 @@
 BBOalert,Precision
 # Precision based on the books Precision Today and Precision 101
     Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
-    Shortcut,PreHi,Hi! Precision: 1C 16+; 1D may be short; 1NT 14-16 balanced; UDA\n
+    Shortcut,prehi,Hi! Precision: 1C 16+; 1D may be short; 1NT 14-16 balanced; UDA\n
 
     Trusted
 

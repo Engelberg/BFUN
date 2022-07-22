@@ -1,7 +1,7 @@
 BBOalert,BFUN
 # BFUN system with KK Relay
     Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
-    Shortcut,BFUNHi,Hi! 1C 16+; 1NT 13-15 balanced; 4-card majors; canape (two-suiters open with secondary suit first); UDA\n
+    Shortcut,bfunhi,Hi! 1C 16+; 1NT 13-15 balanced; 4-card majors; canape (two-suiters open with secondary suit first); UDA\n
 
     Trusted
 
