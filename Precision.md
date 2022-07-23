@@ -29,6 +29,28 @@ BBOalert,Precision
 
 ## Development
 
+    1N--,2C,Stayman; 9+ pts; might not have 4-card major
+    1N--,2D,Transfer to hearts; 5+!H
+    1N--,2H,Transfer to spades; 5+!S
+    1N--,2S,Transfer to clubs; 6+!C
+    1N--2S--,2N,Not interested in 3NT
+    1N--2S--2N--,3C,correct to !C
+    1N--2S--2N--,3D,game forcing strength; short !D
+    1N--2S--2N--,3H,game forcing strength; short !H
+    1N--2S--2N--,3S,game forcing strength; short !S
+    1N--2S--,3C,Accept transfer with interest in 3NT
+    1N--2S--3C--,3D,game forcing strength; short !D
+    1N--2S--3C--,3H,game forcing strength; short !H
+    1N--2S--3C--,3S,game forcing strength; short !S    
+    1N--,2N,Transfer to diamonds; 6+!D
+    1N--2N--,3C,Not interested in 3NT
+    1N--2N--3C--,3D,correct to !D
+    1N--2N--3C--,3H,game forcing strength; short !H
+    1N--2N--3C--,3S,game forcing strength; short !S
+    1N--2N--,3D,Accept transfer with interest in 3NT
+    1N--2N--3D--,3H,game forcing strength; short !H
+    1N--2N--3D--,3S,game forcing strength; short !S
+
     1C--,1D,0-7 pts
     1C--1D--,1N,17-19 pts; balanced
     1C--1D--,2N,20-21 pts; balanced
