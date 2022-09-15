@@ -152,12 +152,12 @@ BBOalert,Precision
     1C--3H--,3S,accepts transfer; asks for control points
     1C--3H--3S--,3N,4 control points (A=2;K=1)
     1C--3H--3S--,4C,5 control points (A=2;K=1)
-    1C--3H--3S--,4D,6 control points (A=2;K=1) 
+    1C--3H--3S--,4D,6 control points (A=2;K=1)
     1C--,3N,4-4-4-1 shape with !C singleton; usually 12+ HCP
     1C--3N--,4C,accepts transfer; asks for control points
     1C--3N--4C--,4D,4 control points (A=2;K=1)
     1C--3N--4C--,4H,5 control points (A=2;K=1)
-    1C--3N--4C--,4S,6 control points (A=2;K=1)    
+    1C--3N--4C--,4S,6 control points (A=2;K=1)
     1C--,4C,4-4-4-1 shape with !D singleton; usually 12+ HCP
     1C--4C--,4D,accepts transfer; asks for control points
     1C--4C--4D--,4H,4 control points (A=2;K=1)
@@ -181,6 +181,13 @@ BBOalert,Precision
     1C--3S--4D--,5C,solid !C
     1C--3S--,4H,5+!H
     1C--3S--,4S,5+!S
+    
+    1C--,4N,Asks for Aces
+    1C--4N--,5C,0 Aces
+    1C--4N--,5D,1 Ace
+    1C--4N--,5H,2 Aces
+    1C--4N--,5S,3 Aces
+    1C--4N--,5N,4 Aces
 
     1CDb,--,0-4 pts
     1CDb,1D,5-7 pts
