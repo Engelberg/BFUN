@@ -33,6 +33,10 @@ BBOalert,Precision
 
     1N--,2C,Stayman; 9+ pts; might not have 4-card major
     1N--,2D,Transfer to hearts; 5+!H
+    1N--2D--,2H,Accept transfer
+    1N--2D--,3H,Super-accept transfer; 4+!H and max NT hand
+    1N--2H--,2S,Accept transfer
+    1N--2H--,3S,Super-accept transfer; 4+!S and max NT hand
     1N--,2H,Transfer to spades; 5+!S
     1N--,2S,Transfer to clubs; 6+!C
     1N--2S--,2N,Not interested in 3NT
