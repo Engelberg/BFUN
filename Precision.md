@@ -25,7 +25,9 @@ BBOalert,Precision
     ,3D,weak preempt; 7!D
     ,3H,weak preempt; 7!H
     ,3S,weak preempt; 7!S
-    ,3N,solid 7-8 card minor suit
+    ,3N,solid 7+ card minor suit
+    ,4C,8+ !H with strong hand
+    ,4D,8+ !S with strong hand
 
 ## Development
 
@@ -85,9 +87,18 @@ BBOalert,Precision
     1C--1D--,2S,5+!S; 21+ pts
     1C--1D--,3C,5+!C; 21+ pts
     1C--1D--,3D,5+!D; 21+ pts
+    1C--1D--,3H,strong hand with long solid !H
+    1C--1D--,3S,strong hand with long solid !S
     
     1C--,2H,4-7 pts; 6+!H
     1C--,2S,4-7 pts; 6+!S
+    1C--2[HS]--,2N,Asks partner to show singleton or void
+    1C--2[HS]--2N--,3C,0-1!C
+    1C--2[HS]--2N--,3D,0-1!D
+    1C--2H--2N--,3H,Denies singleton or void
+    1C--2S--2N--,3H,0-1!H
+    1C--2H--2N--,3S,0-1!S
+    1C--2S--2N--,3S,Denies singleton or void
     1C--,1H,8+ pts; transfer to spades; 5+!S
     1C--1H--,1S,accept transfer
     1C--1H--1S--,1N,0-2 control points (A=2;K=1)
