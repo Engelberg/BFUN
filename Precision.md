@@ -47,7 +47,7 @@ BBOalert,Precision
     1N--2S--,3C,Accept transfer with interest in 3NT
     1N--2S--3C--,3D,game forcing strength; short !D
     1N--2S--3C--,3H,game forcing strength; short !H
-    1N--2S--3C--,3S,game forcing strength; short !S    
+    1N--2S--3C--,3S,game forcing strength; short !S
     1N--,2N,Transfer to diamonds; 6+!D
     1N--2N--,3C,Not interested in 3NT
     1N--2N--3C--,3D,correct to !D
@@ -64,6 +64,10 @@ BBOalert,Precision
     1C--1D--1N--,2C,Stayman; 6+ pts; might not have 4-card major
     1C--1D--1N--,2D,Transfer to hearts; 5+!H
     1C--1D--1N--,2H,Transfer to spades; 5+!S
+    1C--1D--1N--2D--,2H,Accept transfer    
+    1C--1D--1N--2D--,3H,Super-accept transfer; 4+!H and max NT hand
+    1C--1D--1N--2H--,2S,Accept transfer
+    1C--1D--1N--2H--,3S,Super-accept transfer; 4+!S and max NT hand
     1C--1D--1N--,2S,Transfer to clubs; 6+!C
     1C--1D--1N--2S--,2N,Not interested in 3NT
     1C--1D--1N--2S--2N--,3C,correct to !C
@@ -73,7 +77,7 @@ BBOalert,Precision
     1C--1D--1N--2S--,3C,Accept transfer with interest in 3NT
     1C--1D--1N--2S--3C--,3D,game forcing strength; short !D
     1C--1D--1N--2S--3C--,3H,game forcing strength; short !H
-    1C--1D--1N--2S--3C--,3S,game forcing strength; short !S    
+    1C--1D--1N--2S--3C--,3S,game forcing strength; short !S
     1C--1D--1N--,2N,Transfer to diamonds; 6+!D
     1C--1D--1N--2N--,3C,Not interested in 3NT
     1C--1D--1N--2N--3C--,3D,correct to !D
