@@ -64,7 +64,7 @@ BBOalert,Precision
     1C--1D--1N--,2C,Stayman; 6+ pts; might not have 4-card major
     1C--1D--1N--,2D,Transfer to hearts; 5+!H
     1C--1D--1N--,2H,Transfer to spades; 5+!S
-    1C--1D--1N--2D--,2H,Accept transfer    
+    1C--1D--1N--2D--,2H,Accept transfer
     1C--1D--1N--2D--,3H,Super-accept transfer; 4+!H and max NT hand
     1C--1D--1N--2H--,2S,Accept transfer
     1C--1D--1N--2H--,3S,Super-accept transfer; 4+!S and max NT hand
@@ -86,6 +86,18 @@ BBOalert,Precision
     1C--1D--1N--2N--,3D,Accept transfer with interest in 3NT
     1C--1D--1N--2N--3D--,3H,game forcing strength; short !H
     1C--1D--1N--2N--3D--,3S,game forcing strength; short !S
+    1C--1D--2N--,3C,Puppet Stayman asks for 4 or 5-card major
+    1C--1D--2N--3C--,3D,No 5-card major; at least one 4-card major
+    1C--1D--2N--3C--,3H,5!H
+    1C--1D--2N--3C--,3S,5!S
+    1C--1D--2N--3C--,3N,No 4 or 5-card major
+    1C--1D--2N--3C--3D--,3H,4!S
+    1C--1D--2N--3C--3D--,3S,4!H
+    1C--1D--2N--3C--3D--,3N,No 4-card major
+    1C--1D--2N--3C--3D--,4C,4+!H 4+!S with slam interest
+    1C--1D--2N--3C--3D--,4D,4+!H 4+!S without slam interest
+
+
 
     1C--1D--,1H,5+!H
     1C--1D--,1S,5+!S
@@ -97,7 +109,7 @@ BBOalert,Precision
     1C--1D--,3D,5+!D; 21+ pts
     1C--1D--,3H,strong hand with long solid !H
     1C--1D--,3S,strong hand with long solid !S
-    
+
     1C--,2H,4-7 pts; 6+!H
     1C--,2S,4-7 pts; 6+!S
     1C--2[HS]--,2N,Asks partner to show singleton or void
@@ -143,11 +155,18 @@ BBOalert,Precision
     1C--1N--,3H,5+!H; slam interest
     1C--1N--,3S,5+!S; slam interest
     1C--1N--,4C,5+!C; slam interest
-    1C--2N--,3C,Stayman
-    1C--2N--,3D,5+!D
-    1C--2N--,3H,5+!H
-    1C--2N--,3S,5+!S
-    
+    1C--2N--,3C,Puppet Stayman asks for 4 or 5-card major
+    1C--2N--3C--,3D,No 5-card major; at least one 4-card major
+    1C--2N--3C--,3H,5!H
+    1C--2N--3C--,3S,5!S
+    1C--2N--3C--,3N,No 4 or 5-card major
+    1C--2N--3C--3D--,3H,4!S
+    1C--2N--3C--3D--,3S,4!H
+    1C--2N--3C--3D--,3N,No 4-card major
+    1C--2N--3C--3D--,4C,4+!H 4+!S with slam interest
+    1C--2N--3C--3D--,4D,4+!H 4+!S without slam interest
+
+
     1C--,3C,4-4-4-1 shape with black singleton; usually less than 12 HCP
     1C--3C--,3D,artificial;ask partner to clarify singleton
     1C--3C--3D--,3H,!C singleton
@@ -210,7 +229,7 @@ BBOalert,Precision
     1C1H,2H,9+ pts; balanced; no stopper
     1C1H,1S,9+ pts; 5+!S
     1C1H,2C,9+ pts; 5+!C
-    1C1H,2D,9+ pts; 5+!D    
+    1C1H,2D,9+ pts; 5+!D
     1C1S,2S,9+ pts; balanced; no stopper
     1C1S,2C,9+ pts; 5+!C
     1C1S,2D,9+ pts; 5+!D
@@ -460,4 +479,15 @@ BBOalert,Precision
     2D2[HS]2N--,3S,14-15 pts; 4!S 3!H 1!D 5!C
     2D2[HS]2N--,3N,14-15 pts; 4!S 4!H 0!D 5!C
     2D2[HS]2N--3[DHSN]--,4D,artificial ask for control points
+    
+    2N--,3C,Puppet Stayman asks for 4 or 5-card major
+    2N--3C--,3D,No 5-card major; at least one 4-card major
+    2N--3C--,3H,5!H
+    2N--3C--,3S,5!S
+    2N--3C--,3N,No 4 or 5-card major
+    2N--3C--3D--,3H,4!S
+    2N--3C--3D--,3S,4!H
+    2N--3C--3D--,3N,No 4-card major
+    2N--3C--3D--,4C,4+!H 4+!S with slam interest
+    2N--3C--3D--,4D,4+!H 4+!S without slam interest
 
