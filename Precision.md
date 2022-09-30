@@ -323,7 +323,7 @@ BBOalert,Precision
     1CDb----,2S,5+!S; 21+ pts
     1CDb----,3C,5+!C; 21+ pts
     1CDb----,3D,5+!D; 21+ pts
-    
+
     1CDb,2H,4-7 pts; 6+!H
     1CDb,2S,4-7 pts; 6+!S
     1CDb,1H,8+ pts; transfer to spades; 5+!S
@@ -409,8 +409,73 @@ BBOalert,Precision
     1CDb3S--,4H,5+!H
     1CDb3S--,4S,5+!S
 
-    1D--,2D,inverted minor; 11+ pts; 5+!D
-    1D--,3D,preemptive raise in diamonds; 0-7 pts
+    1D--,1H,natural; 4+!H
+    1D--,1S,natural; 4+!S
+    1D--,1N,7-11 balanced; denies 4-card major
+    1D--,2C,4+!C; 11+ pts; no 4-card major unless 6-4+; forcing
+    ----1D--,2C,5+!C; 9-10 pts; denies 4-card major
+    ----1D--,2D,5+!D; 9-10 pts; denies 4-card major
+    1D--,2D,4+!D; 11+ pts; no 4-card major unless 6-4+; forcing
+    1D--,2H,5!S 4-5!H; less than invitational
+    1D--,2S,5!S 4-5!H; invitational
+    1D--,2N,11-12 pts balanced; denies 4-card major
+    1D--,3C,5-4 minors at least; either could be longer; less than invitational
+    1D--,3D,6+!D; 5-10 pts
+    1D--,3H,7+!H; 6-9 pts
+    1D--,3S,7+!S; 6-9 pts
+    1D--,4D,7+!D; 6-9 pts
+    1D--,3N,13-16 pts balanced; denies 4-card major
+    1D--,4C,5+!C 5+!D; less than invitational
+    1D--,4[HS],to play
+    1D--,5[CD],to play
+
+    1D--1H--,1S,natural; 4+!S
+    1D--1[HS]--,1N,11-13 pts balanced
+    1D--1[HS]--,2C,8+ cards in the minors; unbalanced shape
+    1D--1[HS]--,2D,6+!D
+    1D--1S--,2H,14-15 pts; 5+!D 4+!H
+    1D--1[HS]--,2N,14-15 pts; 6!D; no singleton or void
+    1D--1[HS]--,3C,13-15 pts; 5+!C 5+!D
+    1D--1[HS]--,3D,long good diamond suit; average or maximum hand
+    1D--1H--,3S,4+!H 0-1!S game force
+    1D--1[HS]--,4C,support for major; short clubs; game force
+    1D--1[HS]--,4D,support for major; short diamonds; game force
+    1D--1S--,4H,4+!S 0-1!H game force
+
+    1D--2C--,2D,5+!D; unbalanced; denies 4+ clubs
+    1D--2C--2D--,3C,non-forcing
+    1D--2[CD]--,2H,artificial; 11-13 balanced
+    1D--2[CD]--2H--,2S,puppet to 2NT
+    1D--2[CD]--2H--2S--,2N,was forced to bid 2NT
+    1D--2[CD]--2H--2S--2N--,3[CD],game forcing; slam interest
+    1D--2[CD]--2H--2S--2N--,3[HS],6+ of the minor; exactly 4 of the major; game forcing
+    1D--2[CD]--2H--2S--2N--,3N,to play
+    1D--2[CD]--2H--,2N,slam interest; balanced; asks for 4+card minor
+    1D--2C--2H--,3C,invite non-forcing
+    1D--2D--2H--,3D,invite non-forcing
+    1D--2D--2H--,3C,invite both minors non-forcing
+    1D--2[CD]--2H--,3[HS],6 of the minor; 5 of the major; game forcing
+    1D--2[CD]--2H--,3N,to play
+    1D--2[CD]--,2S,artificial; undisclosed splinter for partner's minor; game forcing
+    1D--2[CD]--2S--,2N,asks which suit is the short suit
+    1D--2C--,2N,4!S 4!H 4!D 1!C min hand
+    1D--2C--,3N,4!S 4!H 4!D 1!C max hand
+    1D--2D--,2N,6!D no singleton or void; min hand
+    1D--2D--,3N,6!D no singleton or void; max hand
+    1D--2C--,3C,artificial; 3!C 5!D and a 4-card major; game forcing
+    1D--2D--,3C,artificial; 3!D 5!C and a 4-card major; game forcing
+    1D--2[CD]--3C--,3D,which major?
+    1D--2[CD]--,3D,very good 6+card diamond suit; game forcing
+    1D--2[CD]--,3H,6+!D 5+!H; game forcing
+    1D--2[CD]--,3S,6+!D 5+!S; game forcing
+    
+    1D--2[HS]--,3C,at least 5-5 in the minors
+    1D--2[HS]--,3D,rebidding diamonds
+    1D--2[HS]--,2N,game interest
+    1D--2[HS]--2N--,3C,minimum 5!S 4!H
+    1D--2[HS]--2N--,3D,maximum 5!S 4!H
+    1D--2[HS]--2N--,3H,minimum 5!S 5!H
+    1D--2[HS]--2N--,3S,maximum 5!S 5!H
 
     1[HS]--,1N,forcing
     1[HS]--,2C,game force; 4+!C
