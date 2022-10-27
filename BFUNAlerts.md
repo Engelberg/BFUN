@@ -1,13 +1,12 @@
 BBOalert,BFUN
 # BFUN system with KK Relay
     Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
-    Shortcut,bfunhi,Hi! 1C 16+; 1NT 13-15 balanced; 4-card majors; canape (two-suiters open with secondary suit first); UDA\n
-
     Trusted
 
 ## Openings
 
     Option,BFUN system,enigmisto+RobbEf
+    Shortcut,bfunhi,Hi! 1C 16+; 1NT 13-15 balanced; 4-card majors; canape (two-suiters open with secondary suit first); UDA\n
     ,1C,Artificial 16+ pts,20220418_20:49 Deal 15 robbef
     ,1D,11-15 pts; 4+!D
     ,1H,11-15 pts; 4+!H
