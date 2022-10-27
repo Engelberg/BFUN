@@ -330,10 +330,9 @@ BBOalert,BFUN
     1N,2D,!S or both majors
     1N,2H,!C or both black suits
     1N,2S,3-suited hand including spades
-    1N,2N,5-5 !C/!D or 7+!D
+    1N,2N,5-5 !S/!D or 7+!D
     1N,3C,5-5 !D/!H or 7+!H
     1N,3D,5-5 !H/!S or 7+!S
-    1N,3H,5-5 !S/!C or 7+!C
 
     Option,Recorded OFF
     Option,Recorded ON
