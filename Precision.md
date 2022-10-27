@@ -1,5 +1,5 @@
 BBOalert,Precision
-# Precision based on the books Precision Today and Precision 101
+# Precision based on the books Standard Modern Precision and Precision Today
     Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
     Shortcut,prehi,Hi! Precision: 1C 16+; 1D may be short; 1NT 14-16 balanced; UDA\n
 
@@ -17,7 +17,7 @@ BBOalert,Precision
     ,2D,Artificial: 11-15 pts; three-suited with short diamonds
     ,2H,weak preempt; 5-6!H
     ,2S,weak preempt; 5-6!S
-    ,2N,22-23 pts; balanced
+    ,2N,20-21 pts; balanced
 
     Untrusted
 
@@ -57,243 +57,252 @@ BBOalert,Precision
     1N--2N--3D--,3H,game forcing strength; short !H
     1N--2N--3D--,3S,game forcing strength; short !S
 
-    1C--,1D,0-7 pts
-    1C--1D--,1N,17-19 pts; balanced
-    1C--1D--,2N,20-21 pts; balanced
-    1C--1D--,3N,24-26 pts; balanced
-    1C--1D--1N--,2C,Stayman; 6+ pts; might not have 4-card major
-    1C--1D--1N--,2D,Transfer to hearts; 5+!H
-    1C--1D--1N--,2H,Transfer to spades; 5+!S
-    1C--1D--1N--2D--,2H,Accept transfer
-    1C--1D--1N--2D--,3H,Super-accept transfer; 4+!H and max NT hand
-    1C--1D--1N--2H--,2S,Accept transfer
-    1C--1D--1N--2H--,3S,Super-accept transfer; 4+!S and max NT hand
-    1C--1D--1N--,2S,Transfer to clubs; 6+!C
-    1C--1D--1N--2S--,2N,Not interested in 3NT
-    1C--1D--1N--2S--2N--,3C,correct to !C
-    1C--1D--1N--2S--2N--,3D,game forcing strength; short !D
-    1C--1D--1N--2S--2N--,3H,game forcing strength; short !H
-    1C--1D--1N--2S--2N--,3S,game forcing strength; short !S
-    1C--1D--1N--2S--,3C,Accept transfer with interest in 3NT
-    1C--1D--1N--2S--3C--,3D,game forcing strength; short !D
-    1C--1D--1N--2S--3C--,3H,game forcing strength; short !H
-    1C--1D--1N--2S--3C--,3S,game forcing strength; short !S
-    1C--1D--1N--,2N,Transfer to diamonds; 6+!D
-    1C--1D--1N--2N--,3C,Not interested in 3NT
-    1C--1D--1N--2N--3C--,3D,correct to !D
-    1C--1D--1N--2N--3C--,3H,game forcing strength; short !H
-    1C--1D--1N--2N--3C--,3S,game forcing strength; short !S
-    1C--1D--1N--2N--,3D,Accept transfer with interest in 3NT
-    1C--1D--1N--2N--3D--,3H,game forcing strength; short !H
-    1C--1D--1N--2N--3D--,3S,game forcing strength; short !S
-    1C--1D--2N--,3C,Puppet Stayman asks for 4 or 5-card major
-    1C--1D--2N--3C--,3D,No 5-card major; at least one 4-card major
-    1C--1D--2N--3C--,3H,5!H
-    1C--1D--2N--3C--,3S,5!S
-    1C--1D--2N--3C--,3N,No 4 or 5-card major
-    1C--1D--2N--3C--3D--,3H,4!S
-    1C--1D--2N--3C--3D--,3S,4!H
-    1C--1D--2N--3C--3D--,3N,No 4-card major
-    1C--1D--2N--3C--3D--,4C,4+!H 4+!S with slam interest
-    1C--1D--2N--3C--3D--,4D,4+!H 4+!S without slam interest
-
-
-
-    1C--1D--,1H,5+!H
-    1C--1D--,1S,5+!S
-    1C--1D--,2C,5+!C
-    1C--1D--,2D,5+!D
-    1C--1D--,2H,5+!H; 21+ pts
-    1C--1D--,2S,5+!S; 21+ pts
-    1C--1D--,3C,5+!C; 21+ pts
-    1C--1D--,3D,5+!D; 21+ pts
-    1C--1D--,3H,strong hand with long solid !H
-    1C--1D--,3S,strong hand with long solid !S
-
-    1C--,2H,4-7 pts; 6+!H
-    1C--,2S,4-7 pts; 6+!S
-    1C--2[HS]--,2N,Asks partner to show singleton or void
-    1C--2[HS]--2N--,3C,0-1!C
-    1C--2[HS]--2N--,3D,0-1!D
-    1C--2H--2N--,3H,Denies singleton or void
-    1C--2S--2N--,3H,0-1!H
-    1C--2H--2N--,3S,0-1!S
-    1C--2S--2N--,3S,Denies singleton or void
-    1C--,1H,8+ pts; transfer to spades; 5+!S
-    1C--1H--,1S,accept transfer
-    1C--1H--1S--,1N,0-2 control points (A=2;K=1)
-    1C--1H--1S--,2C,3 control points (A=2;K=1)
-    1C--1H--1S--,2D,4 control points (A=2;K=1)
-    1C--1H--1S--,2H,5 control points (A=2;K=1)
-    1C--,1S,8+ pts; transfer to clubs; 5+!C
-    1C--1S--,2C,accept transfer
-    1C--1S--2C--,2D,0-2 control points (A=2;K=1)
-    1C--1S--2C--,2H,3 control points (A=2;K=1)
-    1C--1S--2C--,2S,4 control points (A=2;K=1)
-    1C--1S--2C--,2N,5 control points (A=2;K=1)
-    1C--,2C,8+ pts; transfer to diamonds; 5+!D
-    1C--2C--,2D,accept transfer
-    1C--2C--2D--,2H,0-2 control points (A=2;K=1)
-    1C--2C--2D--,2S,3 control points (A=2;K=1)
-    1C--2C--2D--,2N,4 control points (A=2;K=1)
-    1C--2C--2D--,3C,5 control points (A=2;K=1)
-    1C--,2D,8+ pts; transfer to hearts; 5+!H
-    1C--2D--,2H,accept transfer
-    1C--2D--2H--,2S,0-2 control points (A=2;K=1)
-    1C--2D--2H--,2N,3 control points (A=2;K=1)
-    1C--2D--2H--,3C,4 control points (A=2;K=1)
-    1C--2D--2H--,3D,5 control points (A=2;K=1)
-
-    1C--,1N,8-13 pts; balanced; no 5-card suit
-    1C--,2N,14+ pts; balanced; no 5-card suit; forcing to 4NT
-    1C--1N--,2C,Stayman
-    1C--1N--,2D,5+!D
-    1C--1N--,2H,5+!H
-    1C--1N--,2S,5+!S
-    1C--1N--,3C,5+!C
-    1C--1N--,3D,5+!D; slam interest
-    1C--1N--,3H,5+!H; slam interest
-    1C--1N--,3S,5+!S; slam interest
-    1C--1N--,4C,5+!C; slam interest
-    1C--2N--,3C,Puppet Stayman asks for 4 or 5-card major
-    1C--2N--3C--,3D,No 5-card major; at least one 4-card major
-    1C--2N--3C--,3H,5!H
-    1C--2N--3C--,3S,5!S
-    1C--2N--3C--,3N,No 4 or 5-card major
-    1C--2N--3C--3D--,3H,4!S
-    1C--2N--3C--3D--,3S,4!H
-    1C--2N--3C--3D--,3N,No 4-card major
-    1C--2N--3C--3D--,4C,4+!H 4+!S with slam interest
-    1C--2N--3C--3D--,4D,4+!H 4+!S without slam interest
-
-
-    1C--,3C,4-4-4-1 shape with black singleton; usually less than 12 HCP
-    1C--3C--,3D,artificial;ask partner to clarify singleton
-    1C--3C--3D--,3H,!C singleton
-    1C--3C--3D--,3S,!S singleton
-    1C--,3D,4-4-4-1 shape with red singleton; usually less than 12 HCP
-    1C--3D--,3H,artificial;ask partner to clarify singleton
-    1C--3D--3H--,3S,!D singleton
-    1C--3D--3H--,3N,!H singleton
-    1C--,3H,4-4-4-1 shape with !S singleton; usually 12+ HCP
-    1C--3H--,3S,accepts transfer; asks for control points
-    1C--3H--3S--,3N,4 control points (A=2;K=1)
-    1C--3H--3S--,4C,5 control points (A=2;K=1)
-    1C--3H--3S--,4D,6 control points (A=2;K=1)
-    1C--,3N,4-4-4-1 shape with !C singleton; usually 12+ HCP
-    1C--3N--,4C,accepts transfer; asks for control points
-    1C--3N--4C--,4D,4 control points (A=2;K=1)
-    1C--3N--4C--,4H,5 control points (A=2;K=1)
-    1C--3N--4C--,4S,6 control points (A=2;K=1)
-    1C--,4C,4-4-4-1 shape with !D singleton; usually 12+ HCP
-    1C--4C--,4D,accepts transfer; asks for control points
-    1C--4C--4D--,4H,4 control points (A=2;K=1)
-    1C--4C--4D--,4S,5 control points (A=2;K=1)
-    1C--4C--4D--,4N,6 control points (A=2;K=1)
-    1C--,4D,4-4-4-1 shape with !H singleton; usually 12+ HCP
-    1C--4D--,4H,accepts transfer; asks for control points
-    1C--4D--4H--,4S,4 control points (A=2;K=1)
-    1C--4D--4H--,4N,5 control points (A=2;K=1)
-    1C--4D--4H--,5C,6 control points (A=2;K=1)
-    1C--,3S,transfer to 3NT with solid 7-8 card suit
-    1C--3S--,4C,asks for control points
-    1C--3S--4C--,4D,0-2 control points (A=2;K=1)
-    1C--3S--4C--,4H,3 control points (A=2;K=1)
-    1C--3S--4C--,4S,4 control points (A=2;K=1)
-    1C--3S--4C--,4N,5 control points (A=2;K=1)
-    1C--3S--,4D,Which is your suit?
-    1C--3S--4D--,4H,solid !H
-    1C--3S--4D--,4S,solid !S
-    1C--3S--4D--,4N,solid !D
-    1C--3S--4D--,5C,solid !C
-    1C--3S--,4H,5+!H
-    1C--3S--,4S,5+!S
+    1C--,1D,0-7 pts any shape
+    1C--,1H,8-11 pts any shape; game forcing
+    1C--,1S,12+ pts; 5+!S
+    1C--,1N,12+ pts; balanced
+    1C--,2C,12+ pts; 5+!C
+    1C--,2D,12+ pts; 5+!D
+    1C--,2H,12+ pts; 5+!H
+    1C--,2S,12+ pts; 4441 shape with unspecified singleton
+    ----1C--,1H,8-10 pts; 5+!H; game forcing
+    ----1C--,1S,8-10 pts; 5+!S; game forcing
+    ----1C--,1N,8-10 pts; balanced; game forcing
+    ----1C--,2C,8-10 pts; 5+!C; game forcing
+    ----1C--,2D,8-10 pts; 5+!D; game forcing
+    ----1C--,2S,8-10 pts; 4441 shape with unspecified singleton; game forcing
     
-    1C--,4N,Asks for Aces
-    1C--4N--,5C,0 Aces
-    1C--4N--,5D,1 Ace
-    1C--4N--,5H,2 Aces
-    1C--4N--,5S,3 Aces
-    1C--4N--,5N,4 Aces
+    1C--1D--,1H,4+!H forcing one round
+    1C--1D--,1S,4+!S forcing one round
+    1C--1D--,1N,17-19 pts; balanced
+    1C--1D--,2C,6+!C or 5!C 4!D; denies 4-card major
+    1C--1D--,2D,6+!D or 5!D 4!C; denies 4-card major
+    1C--1D--,2H,GF balanced or GF hearts; asks partner to bid 2S
+    1C--1D--2H--,2S,waiting
+    1C--1D--,2S,GF spades
+    1C--1D--,2N,22-24 pts; balanced
+    1C--1D--,3C,GF clubs with no 4-card major
+    1C--1D--,3D,GF diamonds with no 4-card major
+    
+    1C--1D--1H,1S,4+!S; denies 4+ hearts; 0-7 pts; forcing
+    1C--1D--1H--1S--,1N,not forcing; likely three suited short spades
+    1C--1D--1H--1S--,2C,4+!C
+    1C--1D--1H--1S--,2D,4+!D
+    1C--1D--1H--1S--,2H,6+!H
+    1C--1D--1H--1S--,2S,3+!S 16-19 pts
+    1C--1D--1H--1S--,3S,3+!S 18+ pts
+    1C--1D--1H--1S--,2N,21-22 pts; likely three suited short spades
+    1C--1D--1H--1S--,3C,4+!S 5+!C; game forcing
+    1C--1D--1H--1S--,3D,4+!S 5+!D; game forcing
+    1C--1D--1H--1S--,3H,long good heart suit inviting to game
+    1C--1D--1H--1S--,3N,to play
+    1C--1D--1H--1S--,4[HS],to play
+    1C--1D--1H--1S--,4C,splinter; 20+ pts; 0-1!C
+    1C--1D--1H--1S--,4D,splinter; 20+ pts; 0-1!D
+    
+    1C--1D--1H,1N,0-5 pts without 4+ card heart support or 4+ spades
+    1C--1D--1S,1N,0-5 pts without 4+ card spade support
+    1C--1D--1[HS]--1N--,2C,4+!C
+    1C--1D--1[HS]--1N--,2D,4+!D
+    1C--1D--1H--1N--,2H,6+!H usually
+    1C--1D--1S--1N--,2S,6+!S usually
+    1C--1D--1H--1N--,2S,reverse (5+!H 4+!S 21+ pts)
+    1C--1D--1S--1N--,2H,4+!H
+    1C--1D--1[HS]--1N--,2N,22-23 pts
+    1C--1D--1[HS]--1N--,3C,5+!C game forcing
+    1C--1D--1[HS]--1N--,3D,5+!D game forcing
+    1C--1D--1H--1N--,3H,long good heart suit inviting to game
+    1C--1D--1S--1N--,3S,long good spade suit inviting to game
+    1C--1D--1[HS]--1N--,3N,to play
+    1C--1D--1[HS]--1N--,4[HS],to play
 
-    1CDb,--,0-4 pts
-    1CDb,1D,5-7 pts
-    1CDb,Rd,8+ pts
-    1C1[DHS],Db,5-8 pts
-    1C1[DHS],1N,9-13 pts; balanced; stopper
-    1C1[DHS],2N,14+ pts; balanced; stopper
-    1C1D,2D,9+ pts; balanced; no stopper
-    1C1D,1H,9+ pts; 5+!H
-    1C1D,1S,9+ pts; 5+!S
-    1C1D,2C,9+ pts; 5+!C
-    1C1H,2H,9+ pts; balanced; no stopper
-    1C1H,1S,9+ pts; 5+!S
-    1C1H,2C,9+ pts; 5+!C
-    1C1H,2D,9+ pts; 5+!D
-    1C1S,2S,9+ pts; balanced; no stopper
-    1C1S,2C,9+ pts; 5+!C
-    1C1S,2D,9+ pts; 5+!D
-    1C1S,2H,9+ pts; 5+!H
-    1C2[CDHS],Db,6-8 pts
-    1C2[CDHS],2N,8-10 or 14+ pts; balanced; stopper
-    1C2[CDHS],3N,11-13 pts; balanced; stopper
-    1C2C,3C,9+ pts; balanced; no stopper
-    1C2C,2D,9+ pts; 5+!D
-    1C2C,2H,9+ pts; 5+!H
-    1C2C,2S,9+ pts; 5+!S
-    1C2D,3D,9+ pts; balanced; no stopper
-    1C2D,2H,9+ pts; 5+!H
-    1C2D,2S,9+ pts; 5+!S
-    1C2D,3C,9+ pts; 5+!C
-    1C2H,3H,9+ pts; balanced; no stopper
-    1C2H,2S,9+ pts; 5+!S
-    1C2H,3C,9+ pts; 5+!C
-    1C2H,3D,9+ pts; 5+!D
-    1C2S,3S,9+ pts; balanced; no stopper
-    1C2S,3C,9+ pts; 5+!C
-    1C2S,3D,9+ pts; 5+!D
-    1C2S,3H,9+ pts; 5+!H
+    1C--1D--1[HS]--,2C,6-7 pts; no fit
+    1C--1D--1[HS]--2C--,2D,minimum hand waiting bid
+    1C--1D--1H--2C--,2H,6+!H
+    1C--1D--1S--2C--,2S,6+!S
+    1C--1D--1H--2C--,2S,reverse (5+!H 4+!S 21+ pts)
+    1C--1D--1S--2C--,2H,4+!H
+    1C--1D--1[HS]--2C--,2N,game forcing waiting bid
+    1C--1D--1[HS]--2C--,3C,5+!C game forcing
+    1C--1D--1[HS]--2C--,3D,5+!D game forcing
+    1C--1D--1[HS]--2C--,3H,sets hearts as trump
+    1C--1D--1[HS]--2C--,3S,sets spades as trump
+    
+    1C--1D--1H--,2D,5-7 pts; 3+!H
+    1C--1D--1S--,2D,5-7 pts; 3+!S
+    1C--1D--1H--2D--,2H,sign-off
+    1C--1D--1S--2D--,2S,sign-off
+    1C--1D--1H--2D--,2S,natural; 4+!S
+    1C--1D--1S--2D--,2H,natural; 4+!H
+    1C--1D--1[HS]--2D--,2N,artificial game-force
+    1C--1D--1[HS]--2D--,3C,5+!C game forcing
+    1C--1D--1[HS]--2D--,3D,5+!D game forcing
+    1C--1D--1H--2D--,3H,invite
+    1C--1D--1S--2D--,3S,invite
+    1C--1D--1[HS]--2D--,3N,to play
 
-    1C3[CDHS],Db,balanced; interested in competing
+    1C--1D--1H--,2H,4+!H; 0-4 pts
+    1C--1D--1H--,3H,4+!H; 5-7 pts
+    1C--1D--1S--,2S,4+!S; 0-4 pts
+    1C--1D--1S--,3S,4+!S; 5-7 pts
+    1C--1D--1S--,2H,6-7 pts; 5+!H; denies 3 spades
+    1C--1D--1H--,2N,mini-splinter; 4+!H; 5-7 pts; singleton or void somewhere
+    1C--1D--1S--,2N,mini-splinter; 4+!S; 5-7 pts; singleton or void somewhere
+    1C--1D--1[HS]--2N--,3C,asks responder to show singleton or void; game forcing
+    1C--1D--1[HS]--2N--3C--,3D,0-1!C
+    1C--1D--1[HS]--2N--3C--,3H,0-1!D
+    1C--1D--1H--2N--3C--,3S,0-1!S
+    1C--1D--1S--2N--3C--,3S,0-1!H
+    1C--1D--1[HS]--2N--,3[HS],sign-off
+    1C--1D--1[HS]--2N--,4[HS],sign-off
+    1C--1D--1[HS]--,3[CD],6+ card suit; 4-7 pts in this suit
+    1C--1D--1H--,2S,6+!S; 4-7 pts in this suit
+    1C--1D--1S--,3H,6+!H; 4-7 pts in this suit
+    1C--1D--1[HS]--,4[CD],splinter; 6-7 pts; 5+ trumps; singleton or void in this suit
+    1C--1D--1H--,3S,splinter; 6-7 pts; 5+!H; 0-1!S
+    1C--1D--1S--,4H,splinter; 6-7 pts; 5+!S; 0-1!H
+    
+    1C--1D--2C--,2H,5+!H; 6-7 pts
+    1C--1D--2D--,2S,5+!S; 6-7 pts
+    1C--1D--2[CD]--,2N,6-7 pts
+    1C--1D--2C--,3[DHS],good long suit with 4-6 pts in that suit
+    1C--1D--2D--,3[HS],good long suit with 4-6 pts in that suit
+    1C--1D--2D--,4C,good long suit with 4-6 pts in that suit
+    
+    1C--1D1[HS],Db,takeout double or strong hand
+    1C--1D2[CD],Db,takeout double or strong hand
+    1C--1D1N,Db,penalty double
+    1C--1D1H,2H,Michael's cuebid 5+!S 5+ minor
+    1C--1D1S,2S,Michael's cuebid 5+!S 5+ minor
+    1C--1D1[HS],2N,Unusual 2NT 5+!C 5+!D
+    1C--1D2C,3C,Michael's cuebid 5+!H 5+!S
+    1C--1D2D,3D,Michael's cuebid 5+!H 5+!S
+    1C--1D2H,3H,cuebid showing interest in 3N
+    1C--1D2S,3S,cuebid showing interest in 3N
+    1C--1D2[HS],2N,14-18 balanced
+    1C--1D2N,Db,penalty double
+    1C--1D1H,2S,strong invitational hand in spades
+    1C--1D1[HS],3C,strong invitational hand in clubs
+    1C--1D1[HS],3D,strong invitational hand in diamonds
+    1C--1D1S,3H,strong invitational hand in hearts
+    1C--1D2C,3D,strong invitational hand in diamonds
+    1C--1D2[CD],3H,strong invitational hand in hearts
+    1C--1D2[CD],3S,strong invitational hand in spades
+    
+    1C--1H--,1S,5+!S
+    1C--1H--,2C,5+!C
+    1C--1H--,2D,5+!D
+    1C--1H--,2H,5+!H
+    1C--1H--,1N,balanced
+    1C--1H--,2S,4441 shape with unspecified singleton
+    1C--1H--2S--,2N,asks partner to clarify singleton
+    1C--1H--2S--2N--,3C,club singleton
+    1C--1H--2S--2N--,3D,diamond singleton
+    1C--1H--2S--2N--,3H,heart singleton
+    1C--1H--2S--2N--,3S,spade singleton
+    1C--1H--,3[CDHS],sets suit as trump; initiates control bidding
+
+    1C1[DHS],Db,6-7 pts any shape
+    1C1[DHS],1N,8+ pts; balanced; stopper
+    1C1D,2D,8+ pts; balanced; no stopper
+    1C1D,3D,8+ pts; three-suited short diamonds
+    1C1D,1H,8+ pts; 5+!H
+    1C1D,1S,8+ pts; 5+!S
+    1C1D,2C,8+ pts; 5+!C
+    1C1H,2H,8+ pts; balanced; no stopper
+    1C1H,3H,8+ pts; three-suited short hearts
+    1C1H,1S,8+ pts; 5+!S
+    1C1H,2C,8+ pts; 5+!C
+    1C1H,2D,8+ pts; 5+!D
+    1C1S,2S,8+ pts; balanced; no stopper
+    1C1S,3S,8+ pts; three-suited short spades
+    1C1S,2C,8+ pts; 5+!C
+    1C1S,2D,8+ pts; 5+!D
+    1C1S,2H,8+ pts; 5+!H
+    1C2[CDHS],Db,6-7 pts
+    1C2[CDHS],2N,8+ pts; balanced; stopper
+    1C2C,3C,8+ pts; three-suited short clubs
+    1C2C,2D,8+ pts; 5+!D
+    1C2C,2H,8+ pts; 5+!H
+    1C2C,2S,8+ pts; 5+!S
+    1C2D,3D,8+ pts; three-suited short diamonds
+    1C2D,2H,8+ pts; 5+!H
+    1C2D,2S,8+ pts; 5+!S
+    1C2D,3C,8+ pts; 5+!C
+    1C2H,3H,8+ pts; three-suited short hearts
+    1C2H,2S,8+ pts; 5+!S
+    1C2H,3C,8+ pts; 5+!C
+    1C2H,3D,8+ pts; 5+!D
+    1C2S,3S,8+ pts; three-suited short spades
+    1C2S,3C,8+ pts; 5+!C
+    1C2S,3D,8+ pts; 5+!D
+    1C2S,3H,8+ pts; 5+!H
+
+    1C1D,2[HS],long suit with 5-7 pts in that suit
+    1C1D,3C,long suit with 5-7 pts in that suit
+    1C1H,2S,long suit with 5-7 pts in that suit
+    1C1H,3[CD],long suit with 5-7 pts in that suit
+    1C1S,3[CDH],long suit with 5-7 pts in that suit
+    1C2C,3[DHS],long suit with 5-7 pts in that suit
+    1C2D,3[HS],long suit with 5-7 pts in that suit
+    1C2H,3S, long suit with 5-7 pts in that suit
+
+    1C3[CDHS],Db,7+ pts
+    1C4[CDHS],Db,8+ pts
     1C3[CDHS],3N,8-11 pts; balanced; stopper
     1C3C,3D,game forcing;5+!D
     1C3[CD],3H,game forcing;5+!H
-    1C3[CDH],3S,game forcing;5+!Sed
-    1CDb1D--,2N,20-21 pts; balanced
-    1CDb1D--,3N,24-26 pts; balanced
-    1CDb1D--1N--,2C,Stayman; 6+ pts; might not have 4-card major
-    1CDb1D--1N--,2D,Transfer to hearts; 5+!H
-    1CDb1D--1N--,2H,Transfer to spades; 5+!S
-    1CDb1D--1N--,2S,Transfer to clubs; 6+!C
-    1CDb1D--1N--2S--,2N,Not interested in 3NT
-    1CDb1D--1N--2S--2N--,3C,correct to !C
-    1CDb1D--1N--2S--2N--,3D,game forcing strength; short !D
-    1CDb1D--1N--2S--2N--,3H,game forcing strength; short !H
-    1CDb1D--1N--2S--2N--,3S,game forcing strength; short !S
-    1CDb1D--1N--2S--,3C,Accept transfer with interest in 3NT
-    1CDb1D--1N--2S--3C--,3D,game forcing strength; short !D
-    1CDb1D--1N--2S--3C--,3H,game forcing strength; short !H
-    1CDb1D--1N--2S--3C--,3S,game forcing strength; short !S    
-    1CDb1D--1N--,2N,Transfer to diamonds; 6+!D
-    1CDb1D--1N--2N--,3C,Not interested in 3NT
-    1CDb1D--1N--2N--3C--,3D,correct to !D
-    1CDb1D--1N--2N--3C--,3H,game forcing strength; short !H
-    1CDb1D--1N--2N--3C--,3S,game forcing strength; short !S
-    1CDb1D--1N--2N--,3D,Accept transfer with interest in 3NT
-    1CDb1D--1N--2N--3D--,3H,game forcing strength; short !H
-    1CDb1D--1N--2N--3D--,3S,game forcing strength; short !S
-    1CDb1D--,1H,5+!H
-    1CDb1D--,1S,5+!S
-    1CDb1D--,2C,5+!C
-    1CDb1D--,2D,5+!D
-    1CDb1D--,2H,5+!H; 21+ pts
-    1CDb1D--,2S,5+!S; 21+ pts
-    1CDb1D--,3C,5+!C; 21+ pts
-    1CDb1D--,3D,5+!D; 21+ pts
+    1C3[CDH],3S,game forcing;5+!S
 
+    1CDb,--,0-5 pts
+    1CDb,1D,5+!D GF
+    1CDb,1H,5+!H GF
+    1CDb,1S,5+!S GF
+    1CDb,1N,balanced GF
+    1CDb,2C,5+!C GF
+    1CDb,2D,6+!D; 5-7 pts in that suit
+    1CDb,2H,6+!H; 5-7 pts in that suit
+    1CDb,2S,6+!S; 5-7 pts in that suit
+    1CDb,3C,7+!C; 5-7 pts in that suit
+    1CDb,3D,7+!D; 5-7 pts in that suit
+    1CDb,3H,7+!H; 5-7 pts in that suit
+    1CDb,3S,7+!S; 5-7 pts in that suit
+    1CDb,Rd,6-7 pts
+    1CDbRd--,1N,17-19 pts; balanced
+    1CDbRd--,2N,22-24 pts; balanced
+    1CDbRd--,3N,25-27 pts; balanced
+    1CDbRd--1N--,2C,Stayman; 6+ pts; might not have 4-card major
+    1CDbRd--1N--,2D,Transfer to hearts; 5+!H
+    1CDbRd--1N--,2H,Transfer to spades; 5+!S
+    1CDbRd--1N--,2S,Transfer to clubs; 6+!C
+    1CDbRd--1N--2S--,2N,Not interested in 3NT
+    1CDbRd--1N--2S--2N--,3C,correct to !C
+    1CDbRd--1N--2S--2N--,3D,game forcing strength; short !D
+    1CDbRd--1N--2S--2N--,3H,game forcing strength; short !H
+    1CDbRd--1N--2S--2N--,3S,game forcing strength; short !S
+    1CDbRd--1N--2S--,3C,Accept transfer with interest in 3NT
+    1CDbRd--1N--2S--3C--,3D,game forcing strength; short !D
+    1CDbRd--1N--2S--3C--,3H,game forcing strength; short !H
+    1CDbRd--1N--2S--3C--,3S,game forcing strength; short !S
+    1CDbRd--1N--,2N,Transfer to diamonds; 6+!D
+    1CDbRd--1N--2N--,3C,Not interested in 3NT
+    1CDbRd--1N--2N--3C--,3D,correct to !D
+    1CDbRd--1N--2N--3C--,3H,game forcing strength; short !H
+    1CDbRd--1N--2N--3C--,3S,game forcing strength; short !S
+    1CDbRd--1N--2N--,3D,Accept transfer with interest in 3NT
+    1CDbRd--1N--2N--3D--,3H,game forcing strength; short !H
+    1CDbRd--1N--2N--3D--,3S,game forcing strength; short !S
+    1CDbRd--,1H,5+!H
+    1CDbRd--,1S,5+!S
+    1CDbRd--,2C,5+!C
+    1CDbRd--,2D,5+!D
+    1CDbRd--,2H,5+!H; 21+ pts
+    1CDbRd--,2S,5+!S; 21+ pts
+    1CDbRd--,3C,5+!C; 21+ pts
+    1CDbRd--,3D,5+!D; 21+ pts
     1CDb----,1N,17-19 pts; balanced
-    1CDb----,2N,20-21 pts; balanced
-    1CDb----,3N,24-26 pts; balanced
+    1CDb----,2N,22-24 pts; balanced
+    1CDb----,3N,25-27 pts; balanced
     1CDb----1N--,2C,Stayman; 6+ pts; might not have 4-card major
     1CDb----1N--,2D,Transfer to hearts; 5+!H
     1CDb----1N--,2H,Transfer to spades; 5+!S
@@ -306,7 +315,7 @@ BBOalert,Precision
     1CDb----1N--2S--,3C,Accept transfer with interest in 3NT
     1CDb----1N--2S--3C--,3D,game forcing strength; short !D
     1CDb----1N--2S--3C--,3H,game forcing strength; short !H
-    1CDb----1N--2S--3C--,3S,game forcing strength; short !S    
+    1CDb----1N--2S--3C--,3S,game forcing strength; short !S
     1CDb----1N--,2N,Transfer to diamonds; 6+!D
     1CDb----1N--2N--,3C,Not interested in 3NT
     1CDb----1N--2N--3C--,3D,correct to !D
@@ -324,35 +333,7 @@ BBOalert,Precision
     1CDb----,3C,5+!C; 21+ pts
     1CDb----,3D,5+!D; 21+ pts
 
-    1CDb,2H,4-7 pts; 6+!H
-    1CDb,2S,4-7 pts; 6+!S
-    1CDb,1H,8+ pts; transfer to spades; 5+!S
-    1CDb1H--,1S,accept transfer
-    1CDb1H--1S--,1N,0-2 control points (A=2;K=1)
-    1CDb1H--1S--,2C,3 control points (A=2;K=1)
-    1CDb1H--1S--,2D,4 control points (A=2;K=1)
-    1CDb1H--1S--,2H,5 control points (A=2;K=1)
-    1CDb,1S,8+ pts; transfer to clubs; 5+!C
-    1CDb1S--,2C,accept transfer
-    1CDb1S--2C--,2D,0-2 control points (A=2;K=1)
-    1CDb1S--2C--,2H,3 control points (A=2;K=1)
-    1CDb1S--2C--,2S,4 control points (A=2;K=1)
-    1CDb1S--2C--,2N,5 control points (A=2;K=1)
-    1CDb,2C,8+ pts; transfer to diamonds; 5+!D
-    1CDb2C--,2D,accept transfer
-    1CDb2C--2D--,2H,0-2 control points (A=2;K=1)
-    1CDb2C--2D--,2S,3 control points (A=2;K=1)
-    1CDb2C--2D--,2N,4 control points (A=2;K=1)
-    1CDb2C--2D--,3C,5 control points (A=2;K=1)
-    1CDb,2D,8+ pts; transfer to hearts; 5+!H
-    1CDb2D--,2H,accept transfer
-    1CDb2D--2H--,2S,0-2 control points (A=2;K=1)
-    1CDb2D--2H--,2N,3 control points (A=2;K=1)
-    1CDb2D--2H--,3C,4 control points (A=2;K=1)
-    1CDb2D--2H--,3D,5 control points (A=2;K=1)
-
-    1CDb,1N,8-13 pts; balanced; no 5-card suit
-    1CDb,2N,14+ pts; balanced; no 5-card suit; forcing to 4NT
+    1CDb,1N,8+ pts; balanced; no 5-card suit
     1CDb1N--,2C,Stayman
     1CDb1N--,2D,5+!D
     1CDb1N--,2H,5+!H
@@ -362,52 +343,6 @@ BBOalert,Precision
     1CDb1N--,3H,5+!H; slam interest
     1CDb1N--,3S,5+!S; slam interest
     1CDb1N--,4C,5+!C; slam interest
-    1CDb2N--,3C,Stayman
-    1CDb2N--,3D,5+!D
-    1CDb2N--,3H,5+!H
-    1CDb2N--,3S,5+!S
-    
-    1CDb,3C,4-4-4-1 shape with black singleton; usually less than 12 HCP
-    1CDb3C--,3D,artificial;ask partner to clarify singleton
-    1CDb3C--3D--,3H,!C singleton
-    1CDb3C--3D--,3S,!S singleton
-    1CDb,3D,4-4-4-1 shape with red singleton; usually less than 12 HCP
-    1CDb3D--,3H,artificial;ask partner to clarify singleton
-    1CDb3D--3H--,3S,!D singleton
-    1CDb3D--3H--,3N,!H singleton
-    1CDb,3H,4-4-4-1 shape with !S singleton; usually 12+ HCP
-    1CDb3H--,3S,accepts transfer; asks for control points
-    1CDb3H--3S--,3N,4 control points (A=2;K=1)
-    1CDb3H--3S--,4C,5 control points (A=2;K=1)
-    1CDb3H--3S--,4D,6 control points (A=2;K=1) 
-    1CDb,3N,4-4-4-1 shape with !C singleton; usually 12+ HCP
-    1CDb3N--,4C,accepts transfer; asks for control points
-    1CDb3N--4C--,4D,4 control points (A=2;K=1)
-    1CDb3N--4C--,4H,5 control points (A=2;K=1)
-    1CDb3N--4C--,4S,6 control points (A=2;K=1)    
-    1CDb,4C,4-4-4-1 shape with !D singleton; usually 12+ HCP
-    1CDb4C--,4D,accepts transfer; asks for control points
-    1CDb4C--4D--,4H,4 control points (A=2;K=1)
-    1CDb4C--4D--,4S,5 control points (A=2;K=1)
-    1CDb4C--4D--,4N,6 control points (A=2;K=1)
-    1CDb,4D,4-4-4-1 shape with !H singleton; usually 12+ HCP
-    1CDb4D--,4H,accepts transfer; asks for control points
-    1CDb4D--4H--,4S,4 control points (A=2;K=1)
-    1CDb4D--4H--,4N,5 control points (A=2;K=1)
-    1CDb4D--4H--,5C,6 control points (A=2;K=1)
-    1CDb,3S,transfer to 3NT with solid 7-8 card suit
-    1CDb3S--,4C,asks for control points
-    1CDb3S--4C--,4D,0-2 control points (A=2;K=1)
-    1CDb3S--4C--,4H,3 control points (A=2;K=1)
-    1CDb3S--4C--,4S,4 control points (A=2;K=1)
-    1CDb3S--4C--,4N,5 control points (A=2;K=1)
-    1CDb3S--,4D,Which is your suit?
-    1CDb3S--4D--,4H,solid !H
-    1CDb3S--4D--,4S,solid !S
-    1CDb3S--4D--,4N,solid !D
-    1CDb3S--4D--,5C,solid !C
-    1CDb3S--,4H,5+!H
-    1CDb3S--,4S,5+!S
 
     1D--,1H,natural; 4+!H
     1D--,1S,natural; 4+!S
@@ -468,7 +403,7 @@ BBOalert,Precision
     1D--2[CD]--,3D,very good 6+card diamond suit; game forcing
     1D--2[CD]--,3H,6+!D 5+!H; game forcing
     1D--2[CD]--,3S,6+!D 5+!S; game forcing
-    
+
     1D--2[HS]--,3C,at least 5-5 in the minors
     1D--2[HS]--,3D,rebidding diamonds
     1D--2[HS]--,2N,game interest
