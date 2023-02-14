@@ -158,7 +158,7 @@ BBOalert,BFUN
     1N--,2S,5+S; To play
     1N--,2C,Stayman; but might not have interest in game or major suit contract
     1N--,2D,4+D; non-forcing
-    1N--,2N,5-5 !C/!D or 7+!D
+    1N--,2N,5-5 !S/!D or 7+!D
     1N--,3C,5-5 !D/!H or 7+!H
     1N--,3D,5-5 !H/!S or 7+!S
     1N--,4H,To play
