@@ -1,5 +1,5 @@
 BBOalert,Precision
-# Precision based on the books Standard Modern Precision and Precision Today
+# Precision based on the book Standard Modern Precision
     Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
     Shortcut,prehi,Hi! Precision: 1C 16+; 1D may be short; 1NT 14-16 balanced; UDA\n
 
@@ -188,7 +188,7 @@ BBOalert,Precision
     1C--1D2C,3D,strong invitational hand in diamonds
     1C--1D2[CD],3H,strong invitational hand in hearts
     1C--1D2[CD],3S,strong invitational hand in spades
-    
+
     1C--1H--,1S,5+!S
     1C--1H--,2C,5+!C
     1C--1H--,2D,5+!D
@@ -419,67 +419,109 @@ BBOalert,Precision
     ----1[HS]--,2C,3-card invitational support
 
     2C--,2D,11+ pts; artificial ask for hand description
-    2C--,2H,8-10 pts; 5+!H
-    2C--,2S,8-10 pts; 5+!S
-    2C--,2N,11-12 pts; balanced; no 4-card major
-    2C--,3C,Preemptive club raise
-    2C--,4C,Preemptive club raise
-    2C--,3D,14+ pts; 6+!D
-    2C--,3H,14+ pts; 6+!H
-    2C--,3S,14+ pts; 6+!S
+    2C--,2H,8-11 pts; 5+!H
+    2C--,2S,8-11 pts; 5+!S
+    2C--,2N,puppet to 3C
+    2C--2N--,3C,forced bid
+    2C--2N--3C--,3D,5+!H 5+!S game force
+    2C--2N--3C--,3H,5+!D 5+!H game force
+    2C--2N--3C--,3S,5+!D 5+!S game force
+    2C--,3C,6+!D invitational or better
+    2C--,3D,6+!H invitational or better
+    2C--,3H,6+!S invitational or better
+    2C--,3S,6+!S 4+!H game force
+    2C--,4C,Preemptive club raise 5-9 pts
     2C--,3N,To play
     2C--,4[HS],To play
 
-    2C--2D--,2H,4+!H; 11-13 pts
-    2C--2D--,2S,4+!S; 11-13 pts
-    2C--2D--,2N,14-15 pts with no 4-card major
-    2C--2D--,3C,11-13 pts with no 4-card major
-    2C--2D--,3D,4-5!D; 6+!C
-    2C--2D--,3H,4+!H; 14-15 pts
-    2C--2D--,3S,4+!S; 14-15 pts
-    2C--2D--,3N,14-15 pts with solid clubs
-    2CDb,Rd,10+ pts and strength in unbid suits
+    2C--2D--,2H,any 4-card major
+    2C--2D--2H--,2S,which 4-card major?
+    2C--2D--2H--2S--,2N,4+!H 10-13 pts
+    2C--2D--2H--2S--2N--,3C,signoff
+    2C--2D--2H--2S--2N--,3D,slam try in clubs
+    2C--2D--2H--2S--2N--,3H,invite to game
+    2C--2D--2H--2S--2N--,3S,slam try in hearts
+    2C--2D--2H--2S--2N--,3N,to play
+    2C--2D--2H--2S--2N--,4[HS],to play
+    2C--2D--2H--2S--,3C,4+!S 10-13 pts
+    2C--2D--2H--2S--3C--,3D,slam try in clubs
+    2C--2D--2H--2S--3C--,3H,slam try in spades
+    2C--2D--2H--2S--3C--,3S,invite to game
+    2C--2D--2H--2S--3C--,3N,to play
+    2C--2D--2H--2S--3C--,4[HS],to play
+
+    2C--2D--2H--2S--,3D,4+!H 14-15 pts
+    2C--2D--2H--2S--3D--,3H,slam try in hearts
+    2C--2D--2H--2S--3D--,3N,to play
+    2C--2D--2H--2S--3D--,4[HS],to play
+    2C--2D--2H--2S--,3H,4+!S 14-15 pts
+    2C--2D--2H--2S--3H--,3S,slam try in spades
+    2C--2D--2H--2S--3H--,3N,to play
+    2C--2D--2H--2S--3H--,4[HS],to play
+
+    2C--2D--,2S,4+!S; 12-15 pts; no 4-card major
+    2C--2D--2S--,2N,relay
+    2C--2D--2S--2N--,3C,12-13 pts
+    2C--2D--2S--2N--,3D,14-15 pts with 0-1!D
+    2C--2D--2S--2N--,3H,14-15 pts with 0-1!H
+    2C--2D--2S--2N--,3S,14-15 pts with 0-1!S
+    2C--2D--2S--2N--,3N,14-15 pts; no singleton or void
+    2C--2D--2S--,3C,signoff
+    2C--2D--2S--,3D,slam try in clubs
+    2C--2D--2S--,3H,5!H game force
+    2C--2D--2S--,3S,5!S game force
+    
+    2C--2D--,2N,14-15 pts; no 4-card major; stoppers in majors
+    2C--2D--2N--,3D,slam try in clubs
+    2C--2D--2N--,3H,5!H game force
+    2C--2D--2N--,3S,5!S game force
+
+    2C--2D--,3C,11-12 pts with no 4-card major
+    2C--2D--3C--,3D,slam try in clubs
+    2C--2D--3C--,3H,5!H game force
+    2C--2D--3C--,3S,5!S game force
+    2C--2D--,3D,5+!D game force
+    2C--2D--,3H,5+!H game force
+    2C--2D--,3S,5+!S game force
+    2C--2D--,3N,to play
+
+    2CDb,Rd,10+ pts and defensive hand
     2C2[DHS],2N,11+ pts; artificial ask for hand description
-    2C2[DHS]2N--,3C,11-13 pts
-    2C2[DHS]2N--,3D,14-15 pts; 4-5!D; 6+!C
-    2C2[DHS]2N--,3H,14-15 pts; 4+!H
-    2C2[DHS]2N--,3S,14-15 pts; 4+!S
-    2C2D,3D,!D stopper
-    2C2H,3H,!H stopper
-    2C2S,3S,!S stopper
+    2C2[DHS],3C,natural
+    2C2D,3D,good club raise
+    2C2H,3H,good club raise
+    2C2S,3S,good club raise
     2C2[DHS],Db,negative double; 4-card major
 
     2D--,2[HS],signoff
     2D--,3[CN],signoff
     2D--,4[HS],signoff
-    2D--,2N,artificial ask for hand description
+    2D--,2N,invite to game; asks for hand description
     2D--2N--,3C,11-13 pts
-    2D--2N--3C--,3D,ask for more info
-    2D--2N--3C--3D--,3H,3!S 4!H 1!D 5!C
-    2D--2N--3C--3D--,3S,4!S 3!H 1!D 5!C
+    2D--2N--3C--,3D,relay
+    2D--2N--3C--3D--,3H,4!S 3!H 1!D 5!C
+    2D--2N--3C--3D--,3S,3!S 4!H 1!D 5!C
     2D--2N--3C--3D--,3N,4!S 4!H 0-1!D 4-5!C
-    2D--2N--,3D,14-15 pts; 4!S 4!H 1!D 4!C
-    2D--2N--,3H,14-15 pts; 3!S 4!H 1!D 5!C
-    2D--2N--,3S,14-15 pts; 4!S 3!H 1!D 5!C
-    2D--2N--,3N,14-15 pts; 4!S 4!H 0!D 5!C
-    2D--2N--3[DHSN]--,4D,artificial ask for control points
-    2DDb,Rd,Good diamonds and strength
-    2DDb----,Rd,4!H and 4!S
-    2DDb----,2H,4!H
-    2DDb----,2S,4!S
+    2D--2N--,3D,14-15 pts; 4!S 4!H 0-1!D 4-5!C
+    2D--2N--3D--,3H,sets hearts as suit
+    2D--2N--3D--,3S,sets spades as suit
+    2D--2N--,3H,14-15 pts; 4!S 3!H 1!D 5!C
+    2D--2N--,3S,14-15 pts; 3!S 4!H 1!D 5!C
+
+    2DDb,Rd,Asks for better major
     2D2[HS],Db,penalty double
-    2D2[HS],2N,artificial ask for hand description
+    2D2[HS],2N,invite to game; asks for hand description
     2D2[HS]2N--,3C,11-13 pts
-    2D2[HS]2N--3C--,3D,ask for more info
-    2D2[HS]2N--3C--3D--,3H,3!S 4!H 1!D 5!C
-    2D2[HS]2N--3C--3D--,3S,4!S 3!H 1!D 5!C
+    2D2[HS]2N--3C--,3D,relay
+    2D2[HS]2N--3C--3D--,3H,4!S 3!H 1!D 5!C
+    2D2[HS]2N--3C--3D--,3S,3!S 4!H 1!D 5!C
     2D2[HS]2N--3C--3D--,3N,4!S 4!H 0-1!D 4-5!C
-    2D2[HS]2N--,3D,14-15 pts; 4!S 4!H 1!D 4!C
-    2D2[HS]2N--,3H,14-15 pts; 3!S 4!H 1!D 5!C
-    2D2[HS]2N--,3S,14-15 pts; 4!S 3!H 1!D 5!C
-    2D2[HS]2N--,3N,14-15 pts; 4!S 4!H 0!D 5!C
-    2D2[HS]2N--3[DHSN]--,4D,artificial ask for control points
-    
+    2D2[HS]2N--,3D,14-15 pts; 4!S 4!H 0-1!D 4-5!C
+    2D2[HS]2N--3D--,3H,sets hearts as suit
+    2D2[HS]2N--3D--,3S,sets spades as suit
+    2D2[HS]2N--,3H,14-15 pts; 4!S 3!H 1!D 5!C
+    2D2[HS]2N--,3S,14-15 pts; 3!S 4!H 1!D 5!C
+
     2N--,3C,Puppet Stayman asks for 4 or 5-card major
     2N--3C--,3D,No 5-card major; at least one 4-card major
     2N--3C--,3H,5!H
