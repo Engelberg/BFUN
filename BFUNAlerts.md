@@ -142,7 +142,7 @@ BBOalert,BFUN
     2H--,3S,Strong invite to 4S
     2S--,3H,Strong invite to 4H
     2[DHS]--,3N,To play
-    2[DHS]--,2N,Artificial: Hand pattern query
+    2[DHS]--,2N,Artificial: game force
 
     2C--,2D,Artificial: Relay for short suit
     2C--2D--,2H,short spades
