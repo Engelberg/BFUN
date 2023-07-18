@@ -79,7 +79,7 @@ BBOalert,BFUN
     1[HS]--,2H,attempted sign-off
     1[HS]--,2S,attempted sign-off
     ----1[HS]--,2C,attempted sign-off
-    1[HS]--,2C,Artificial relay bidding initiator; game force
+    1[HS]--,2C,Artificial game force
 
     1D--,2D,4-card support; minimal game interest
     1D--,3D,5-card support; minimal game interest
@@ -121,7 +121,7 @@ BBOalert,BFUN
     1D--,3N,Natural; 15-17 pts; denies 4-card major
     1D--,2[HS],attempted sign-off
     ----1D--,2C,attempted sign-off
-    1D--,2C,Artificial relay bidding initiator; game force
+    1D--,2C,Artificial game force
 
     2D--,3D,Preemptive sign-off
     2D--,4D,Preemptive sign-off
@@ -144,15 +144,39 @@ BBOalert,BFUN
     2[DHS]--,3N,To play
     2[DHS]--,2N,Artificial: Hand pattern query
 
-    2C--,2D,3+!D
+    2C--,2D,Artificial: Relay for short suit
+    2C--2D--,2H,short spades
+    2C--2D--2H--,2S,relay for exact distribution
+    2C--2D--2H--2S--,2N,1-4-4-4
+    2C--2D--2H--2S--,3C,0-4-4-5
+    2C--2D--2H--2S--,3D,0-4-5-4
+    2C--2D--2H--2S--,3H,0-5-4-4
+    2C--2D--,2S,short hearts
+    2C--2D--2S--,2N,relay for exact distribution
+    2C--2D--2S--2N--,3C,4-1-4-4
+    2C--2D--2S--2N--,3D,4-0-4-5
+    2C--2D--2S--2N--,3H,4-0-5-4
+    2C--2D--2S--2N--,3S,5-0-4-4
+    2C--2D--,2N,short clubs
+    2C--2D--2N--,3C,relay for exact distribution
+    2C--2D--2N--3C--,3D,4-4-4-1
+    2C--2D--2N--3C--,3H,4-4-5-0
+    2C--2D--2N--3C--,3S,4-5-4-0
+    2C--2D--2N--3C--,3N,5-4-4-0
+    2C--2D--,3C,short diamonds
+    2C--2D--3C--,3D,relay for exact distribution
+    2C--2D--3C--3D--,3H,4-4-1-4
+    2C--2D--3C--3D--,3S,4-4-0-5
+    2C--2D--3C--3D--,3N,4-5-0-4
+    2C--2D--3C--3D--,4C,5-4-0-4
     2C--,2H,3+!H
     2C--,2S,3+!S
+    2C--,2N,3+!D
     2C--,3C,!C one-suiter
     2C--,3D,!D one-suiter
     2C--,3H,!H one-suiter
     2C--,3S,!S one-suiter
     2C-,3N,natural
-    2C-,2N,Artificial: Relay for short suit
 
     1N--,2H,5+H; To play
     1N--,2S,5+S; To play
@@ -260,15 +284,6 @@ BBOalert,BFUN
     1C--1N--2C--2N--3C--,3H,Artificial: 3!S 1!H 3!D 6!C,20220418_19:43 Deal 7 robbef
     1C--1N--2C--2N--3C--3H--3S--,3N,0-2 control pts (A=2; K=1),20220418_19:44 Deal 7 robbef
 
-    1H--2C--2D--,2H,Relay,20220418_19:05 Deal 4 robbef
-    1H--2C--2D--2H--2S--,2N,Relay,20220418_19:07 Deal 4 robbef
-    1H--2C--2D--2H--2S--2N--3D--,3H,Relay,20220418_19:09 Deal 4 robbef
-    1H--2C--2D--2H--2S--2N--3D--3H--3S--,3N,Relay,20220418_19:11 Deal 4 robbef
-    1H--2C--2D--2H--2S--2N--3D--3H--3S--,3N,Sign-off,20220418_19:12 Deal 4 robbef
-    2D--,2N,Artificial relay bidding initiator; game force,20220418_19:58 Deal 9 robbef
-    2D--2N--3S--,4C,Artificial; relay,20220418_20:05 Deal 9 robbef
-    1C--1S--,1N,Relay,20220418_21:07 Deal 18 robbef
-
 ## Overcalls
     Option,Overcalls,enigmisto+RobbEf
     1C,Db,Artificial 16+ pts
@@ -333,6 +348,118 @@ BBOalert,BFUN
     1N,2N,5-5 !S/!D or 7+!D
     1N,3C,5-5 !D/!H or 7+!H
     1N,3D,5-5 !H/!S or 7+!S
+    
+    1CDb1H--,1S,Relay
+    1CDb1H--1S--,1N,Artificial: 4+!S 4+!H
+    1CDb1H--1S--,2C,Artificial: 4+!S 4+!C
+    1CDb1H--1S--,2D,Artificial: 5+!S 4+!D
+    1CDb1H--1S--,2H,Artificial: 4+!S 5+!D
+    1CDb1H--1S--,2S,Artificial: 5+!S one-suiter; 0-2!H
+    1CDb1H--1S--,2N,Artificial: 5+!S one-suiter; 0-2!D
+    1CDb1H--1S--,3C,Artificial: 5+!S one-suiter; 7-2-2-2 or 6-3-2-2 shape
+    1CDb1H--1S--2S--2N--,3C,Artificial: 5+!S one-suiter; 6-3-2-2 shape
+    1CDb1H--1S--,3D,Artificial: 5!S 3!H 3!D 2!C
+    1CDb1H--1S--,3H,Artificial: 6!S 3!H 3!D 1!C
+    1CDb1H--1S--,3S,Artificial: 7!S 2!H 3!D 1!C
+    1CDb1H--1S--,3N,Artificial: 7!S 3!H 2!D 1!C
+    1CDb1H--1S--,4C,Artificial: 7!S 3!H 3!D 0!C
+
+    1CDb,1S,Artificial: 9+ pts; 4+!H; denies 4!S
+    1CDb1S--,1N,Relay
+    1CDb1S--1N--,2C,Artificial: 4+!H 4+!C
+    1CDb1S--1N--,2D,Artificial: 5+!H 4+!D
+    1CDb1S--1N--,2H,Artificial: 4+!H 5+!D
+    1CDb1S--1N--,2S,Artificial: 5+!H one-suiter; 0-2!S
+    1CDb1S--1N--,2N,Artificial: 5+!H one-suiter; 0-2!D
+    1CDb1S--1N--,3C,Artificial: 5+!H one-suiter; 7-2-2-2 or 6-3-2-2 shape
+    1CDb1S--1N--2S--2N--,3C,Artificial: 5+!H one-suiter; 6-3-2-2 shape
+    1CDb1S--1N--,3D,Artificial: 3!S 5!H 3!D 2!C
+    1CDb1S--1N--,3H,Artificial: 3!S 6!H 3!D 1!C
+    1CDb1S--1N--,3S,Artificial: 2!S 7!H 3!D 1!C
+    1CDb1S--1N--,3N,Artificial: 3!S 7!H 2!D 1!C
+    1CDb1S--1N--,4C,Artificial: 3!S 7!H 3!D 0!C
+
+    1CDb,1N,Artificial: 9+ pts; 5+!C; denies 4-card major
+    1CDb1N--,2C,Relay
+    1CDb,2C,Artificial: 9+ pts; 5+!D; denies 4-card major and 5 clubs
+    1CDb2C--,2D,Relay
+    1CDb,2D,Artificial: 9-11 pts or 15+ pts; balanced
+    1CDb2D--,2H,Relay
+    1CDb2D--2H--,2S,Artificial: 4-4-3-2 with 4-4 same color or 4-3-3-3
+    1CDb2D--2H--,2N,Artificial: 4-4-3-2 with 4-4 same rank
+    1CDb2D--2H--,3C,Artificial: 4-3-3-3 shape
+    1CDb2D--2H--,3D,Artificial: 3!S 4!H 2!D 4!C
+    1CDb2D--2H--,3H,Artificial: 4!S 2!H 4!D 3!C
+    1CDb2D--2H--,3S,Artificial: 2!S 4!H 3!D 4!C
+    1CDb2D--2H--,3N,Artificial: 4!S 3!H 4!D 2!C
+    1CDb,2S,Artificial: 12-14 pts; 4-4-3-2 with 4-4 same color or 4-3-3-3
+    1CDb,2N,Artificial: 12-14 pts; 4-4-3-2 with 4-4 same rank
+    1CDb,3C,Artificial: 12-14 pts; 4-3-3-3 shape
+    1CDb,3D,Artificial: 12-14 pts; 3!S 4!H 2!D 4!C
+    1CDb,3H,Artificial: 12-14 pts; 4!S 2!H 4!D 3!C
+    1CDb,3S,Artificial: 12-14 pts; 2!S 4!H 3!D 4!C
+    1CDb,3N,Artificial: 12-14 pts; 4!S 3!H 4!D 2!C
+
+    1CDb1N--2C--,2N,Artificial; 0-1!H,20220418_19:42 Deal 7 robbef
+    1CDb1N--2C--2N--3C--,3H,Artificial: 3!S 1!H 3!D 6!C,20220418_19:43 Deal 7 robbef
+    1CDb1N--2C--2N--3C--3H--3S--,3N,0-2 control pts (A=2; K=1),20220418_19:44 Deal 7 robbef
+    
+    1DDb1H--,1S,Relay
+    1DDb1H--1S--,1N,Artificial: 4+!S 4+!H
+    1DDb1H--1S--,2C,Artificial: 4+!S 4+!C
+    1DDb1H--1S--,2D,Artificial: 5+!S 4+!D
+    1DDb1H--1S--,2H,Artificial: 4+!S 5+!D
+    1DDb1H--1S--,2S,Artificial: 5+!S one-suiter; 0-2!H
+    1DDb1H--1S--,2N,Artificial: 5+!S one-suiter; 0-2!D
+    1DDb1H--1S--,3C,Artificial: 5+!S one-suiter; 7-2-2-2 or 6-3-2-2 shape
+    1DDb1H--1S--2S--2N--,3C,Artificial: 5+!S one-suiter; 6-3-2-2 shape
+    1DDb1H--1S--,3D,Artificial: 5!S 3!H 3!D 2!C
+    1DDb1H--1S--,3H,Artificial: 6!S 3!H 3!D 1!C
+    1DDb1H--1S--,3S,Artificial: 7!S 2!H 3!D 1!C
+    1DDb1H--1S--,3N,Artificial: 7!S 3!H 2!D 1!C
+    1DDb1H--1S--,4C,Artificial: 7!S 3!H 3!D 0!C
+
+    1DDb,1S,Artificial: 9+ pts; 4+!H; denies 4!S
+    1DDb1S--,1N,Relay
+    1DDb1S--1N--,2C,Artificial: 4+!H 4+!C
+    1DDb1S--1N--,2D,Artificial: 5+!H 4+!D
+    1DDb1S--1N--,2H,Artificial: 4+!H 5+!D
+    1DDb1S--1N--,2S,Artificial: 5+!H one-suiter; 0-2!S
+    1DDb1S--1N--,2N,Artificial: 5+!H one-suiter; 0-2!D
+    1DDb1S--1N--,3C,Artificial: 5+!H one-suiter; 7-2-2-2 or 6-3-2-2 shape
+    1DDb1S--1N--2S--2N--,3C,Artificial: 5+!H one-suiter; 6-3-2-2 shape
+    1DDb1S--1N--,3D,Artificial: 3!S 5!H 3!D 2!C
+    1DDb1S--1N--,3H,Artificial: 3!S 6!H 3!D 1!C
+    1DDb1S--1N--,3S,Artificial: 2!S 7!H 3!D 1!C
+    1DDb1S--1N--,3N,Artificial: 3!S 7!H 2!D 1!C
+    1DDb1S--1N--,4C,Artificial: 3!S 7!H 3!D 0!C
+
+    1DDb,1N,Artificial: 9+ pts; 5+!C; denies 4-card major
+    1DDb1N--,2C,Relay
+    1DDb,2C,Artificial: 9+ pts; 5+!D; denies 4-card major and 5 clubs
+    1DDb2C--,2D,Relay
+    1DDb,2D,Artificial: 9-11 pts or 15+ pts; balanced
+    1DDb2D--,2H,Relay
+    1DDb2D--2H--,2S,Artificial: 4-4-3-2 with 4-4 same color or 4-3-3-3
+    1DDb2D--2H--,2N,Artificial: 4-4-3-2 with 4-4 same rank
+    1DDb2D--2H--,3C,Artificial: 4-3-3-3 shape
+    1DDb2D--2H--,3D,Artificial: 3!S 4!H 2!D 4!C
+    1DDb2D--2H--,3H,Artificial: 4!S 2!H 4!D 3!C
+    1DDb2D--2H--,3S,Artificial: 2!S 4!H 3!D 4!C
+    1DDb2D--2H--,3N,Artificial: 4!S 3!H 4!D 2!C
+    1DDb,2S,Artificial: 12-14 pts; 4-4-3-2 with 4-4 same color or 4-3-3-3
+    1DDb,2N,Artificial: 12-14 pts; 4-4-3-2 with 4-4 same rank
+    1DDb,3C,Artificial: 12-14 pts; 4-3-3-3 shape
+    1DDb,3D,Artificial: 12-14 pts; 3!S 4!H 2!D 4!C
+    1DDb,3H,Artificial: 12-14 pts; 4!S 2!H 4!D 3!C
+    1DDb,3S,Artificial: 12-14 pts; 2!S 4!H 3!D 4!C
+    1DDb,3N,Artificial: 12-14 pts; 4!S 3!H 4!D 2!C
+    
+    1DDb,2H,Artificial: 0-8 pts any shape
+
+    1DDb1N--2C--,2N,Artificial; 0-1!H,20220418_19:42 Deal 7 robbef
+    1DDb1N--2C--2N--3C--,3H,Artificial: 3!S 1!H 3!D 6!C,20220418_19:43 Deal 7 robbef
+    1DDb1N--2C--2N--3C--3H--3S--,3N,0-2 control pts (A=2; K=1),20220418_19:44 Deal 7 robbef
 
     Option,Recorded OFF
     Option,Recorded ON
