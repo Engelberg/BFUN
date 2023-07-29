@@ -76,8 +76,8 @@ BBOalert,BFUN
     1S--1N--,3H,5+!H; 14-15 pts
     1S--1N--,3S,6+!S; 14-15 pts
     1[HS]--,2D,attempted sign-off
-    1[HS]--,2H,attempted sign-off
-    1[HS]--,2S,attempted sign-off
+    1[DS]--,2H,attempted sign-off
+    1[DH]--,2S,attempted sign-off
     ----1[HS]--,2C,attempted sign-off
     1[HS]--,2C,Artificial game force
 
