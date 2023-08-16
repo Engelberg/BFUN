@@ -419,6 +419,8 @@ BBOalert,Precision
     1D--2[HS]--2N--,3S,maximum 5!S 5!H
 
     1[HS]--,1N,forcing
+    ----1[HS]--,1N,not forcing
+    ------1[HS]--,1N,not forcing
     1[HS]--,2C,game force; 4+!C
     1[HS]--,2D,game force; 4+!D
     1S--,2H,game force; 5+!H
