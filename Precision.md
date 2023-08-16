@@ -29,7 +29,7 @@ BBOalert,Precision
     ,4C,8+ !H with strong hand
     ,4D,8+ !S with strong hand
 
-## Development
+## 1N Opening
 
     1N--,2C,Stayman; 9+ pts; might not have 4-card major
     1N--,2D,Transfer to hearts; 5+!H
@@ -56,6 +56,8 @@ BBOalert,Precision
     1N--2N--,3D,Accept transfer with interest in 3NT
     1N--2N--3D--,3H,game forcing strength; short !H
     1N--2N--3D--,3S,game forcing strength; short !S
+
+##  1C Opening
 
     1C--,1D,0-7 pts any shape
     1C--,1H,8-11 pts any shape; game forcing
@@ -89,7 +91,7 @@ BBOalert,Precision
     1C--1D--,2N,22-24 pts; balanced
     1C--1D--,3C,GF clubs with no 4-card major
     1C--1D--,3D,GF diamonds with no 4-card major
-    
+
     1C--1D--1H,1S,4+!S; denies 4+ hearts; 0-7 pts; forcing
     1C--1D--1H--1S--,1N,not forcing; likely three suited short spades
     1C--1D--1H--1S--,2C,4+!C
@@ -105,7 +107,7 @@ BBOalert,Precision
     1C--1D--1H--1S--,4[HS],to play
     1C--1D--1H--1S--,4C,splinter; 20+ pts; 0-1!C
     1C--1D--1H--1S--,4D,splinter; 20+ pts; 0-1!D
-    
+
     1C--1D--1H,1N,0-5 pts without 4+ card heart support or 4+ spades
     1C--1D--1S,1N,0-5 pts without 4+ card spade support
     1C--1D--1[HS]--1N--,2C,4+!C
@@ -133,7 +135,7 @@ BBOalert,Precision
     1C--1D--1[HS]--2C--,3D,5+!D game forcing
     1C--1D--1[HS]--2C--,3H,sets hearts as trump
     1C--1D--1[HS]--2C--,3S,sets spades as trump
-    
+
     1C--1D--1H--,2D,5-7 pts; 3+!H
     1C--1D--1S--,2D,5-7 pts; 3+!S
     1C--1D--1H--2D--,2H,sign-off
@@ -167,14 +169,14 @@ BBOalert,Precision
     1C--1D--1[HS]--,4[CD],splinter; 6-7 pts; 5+ trumps; singleton or void in this suit
     1C--1D--1H--,3S,splinter; 6-7 pts; 5+!H; 0-1!S
     1C--1D--1S--,4H,splinter; 6-7 pts; 5+!S; 0-1!H
-    
+
     1C--1D--2C--,2H,5+!H; 6-7 pts
     1C--1D--2D--,2S,5+!S; 6-7 pts
     1C--1D--2[CD]--,2N,6-7 pts
     1C--1D--2C--,3[DHS],good long suit with 4-6 pts in that suit
     1C--1D--2D--,3[HS],good long suit with 4-6 pts in that suit
     1C--1D--2D--,4C,good long suit with 4-6 pts in that suit
-    
+
     1C--1D1[HS],Db,takeout double or strong hand
     1C--1D2[CD],Db,takeout double or strong hand
     1C--1D1N,Db,penalty double
@@ -350,18 +352,28 @@ BBOalert,Precision
     1CDb1N--,3S,5+!S; slam interest
     1CDb1N--,4C,5+!C; slam interest
 
+## 1D Opening
+
     1D--,1H,natural; 4+!H
     1D--,1S,natural; 4+!S
     1D--,1N,7-11 balanced; denies 4-card major
     1D--,2C,4+!C; 11+ pts; no 4-card major unless 6-4+; forcing
+    1DDb,2[CD],to play
+    1DDb,2N,invitational diamond raise
     ----1D--,2C,5+!C; 9-10 pts; denies 4-card major
     ----1D--,2D,5+!D; 9-10 pts; denies 4-card major
     1D--,2D,4+!D; 11+ pts; no 4-card major unless 6-4+; forcing
     1D--,2H,5!S 4-5!H; less than invitational
     1D--,2S,5!S 4-5!H; invitational
+    1DDb,2H,5!S 4-5!H; less than invitational
+    1DDb,2S,5!S 4-5!H; invitational
     1D--,2N,11-12 pts balanced; denies 4-card major
     1D--,3C,5-4 minors at least; either could be longer; less than invitational
     1D--,3D,6+!D; 5-10 pts
+    1D1[HS],3C,5-4 minors at least; either could be longer; less than invitational
+    1D1[HS],3D,6+!D; 5-10 pts
+    1DDb,3C,5-4 minors at least; either could be longer; less than invitational
+    1DDb,3D,6+!D; 5-10 pts
     1D--,3H,7+!H; 6-9 pts
     1D--,3S,7+!S; 6-9 pts
     1D--,4D,7+!D; 6-9 pts
@@ -369,6 +381,16 @@ BBOalert,Precision
     1D--,4C,5+!C 5+!D; less than invitational
     1D--,4[HS],to play
     1D--,5[CD],to play
+
+    1D1H,2H,Game forcing hand without stopper
+    1D1S,2S,Game forcing hand without stopper
+    1D2C,3C,Game forcing hand without stopper
+    1D2H,3H,Game forcing hand without stopper
+    1D2S,3S,Game forcing hand without stopper
+    1D[1HS],2N,Invites to 3N with stopper
+    1D2[CHS],2N,Invites to 3N with stopper
+    1DDb,Rd,11+ pts
+    1D----Db----,Rd,Warns of short diamonds
 
     1D--1H--,1S,natural; 4+!S
     1D--1[HS]--,1N,11-13 pts balanced
@@ -417,6 +439,8 @@ BBOalert,Precision
     1D--2[HS]--2N--,3D,maximum 5!S 4!H
     1D--2[HS]--2N--,3H,minimum 5!S 5!H
     1D--2[HS]--2N--,3S,maximum 5!S 5!H
+    
+##  2-over-1 for 1M openings
 
     1[HS]--,1N,forcing
     ----1[HS]--,1N,not forcing
@@ -425,6 +449,9 @@ BBOalert,Precision
     1[HS]--,2D,game force; 4+!D
     1S--,2H,game force; 5+!H
     ----1[HS]--,2C,3-card invitational support
+
+
+## 2C Opening
 
     2C--,2D,11+ pts; artificial ask for hand description
     2C--,2H,8-11 pts; 5+!H
@@ -478,7 +505,7 @@ BBOalert,Precision
     2C--2D--2S--,3D,slam try in clubs
     2C--2D--2S--,3H,5!H game force
     2C--2D--2S--,3S,5!S game force
-    
+
     2C--2D--,2N,14-15 pts; no 4-card major; stoppers in majors
     2C--2D--2N--,3D,slam try in clubs
     2C--2D--2N--,3H,5!H game force
@@ -494,12 +521,151 @@ BBOalert,Precision
     2C--2D--,3N,to play
 
     2CDb,Rd,10+ pts and defensive hand
-    2C2[DHS],2N,11+ pts; artificial ask for hand description
-    2C2[DHS],3C,natural
-    2C2D,3D,good club raise
+    2C2[HS],3C,natural
+    2C2[HS],Db,negative double; 4-card major
+    2C2H,2S,natural; forcing one round
     2C2H,3H,good club raise
     2C2S,3S,good club raise
-    2C2[DHS],Db,negative double; 4-card major
+    2C2H,3D,diamonds; game force
+    2C2H,3S,spades; game force
+    2C2S,3D,diamonds; game force
+    2C2S,3H,hearts; game force
+    
+    2CDb,2D,11+ pts; artificial ask for hand description
+    2CDb,2H,8-11 pts; 5+!H
+    2CDb,2S,8-11 pts; 5+!S
+    2CDb,2N,puppet to 3C
+    2CDb2N--,3C,forced bid
+    2CDb2N--3C--,3D,5+!H 5+!S game force
+    2CDb2N--3C--,3H,5+!D 5+!H game force
+    2CDb2N--3C--,3S,5+!D 5+!S game force
+    2CDb,3C,6+!D invitational or better
+    2CDb,3D,6+!H invitational or better
+    2CDb,3H,6+!S invitational or better
+    2CDb,3S,6+!S 4+!H game force
+    2CDb,4C,Preemptive club raise 5-9 pts
+    2CDb,3N,To play
+    2CDb,4[HS],To play
+
+    2CDb2D--,2H,any 4-card major
+    2CDb2D--2H--,2S,which 4-card major?
+    2CDb2D--2H--2S--,2N,4+!H 10-13 pts
+    2CDb2D--2H--2S--2N--,3C,signoff
+    2CDb2D--2H--2S--2N--,3D,slam try in clubs
+    2CDb2D--2H--2S--2N--,3H,invite to game
+    2CDb2D--2H--2S--2N--,3S,slam try in hearts
+    2CDb2D--2H--2S--2N--,3N,to play
+    2CDb2D--2H--2S--2N--,4[HS],to play
+    2CDb2D--2H--2S--,3C,4+!S 10-13 pts
+    2CDb2D--2H--2S--3C--,3D,slam try in clubs
+    2CDb2D--2H--2S--3C--,3H,slam try in spades
+    2CDb2D--2H--2S--3C--,3S,invite to game
+    2CDb2D--2H--2S--3C--,3N,to play
+    2CDb2D--2H--2S--3C--,4[HS],to play
+
+    2CDb2D--2H--2S--,3D,4+!H 14-15 pts
+    2CDb2D--2H--2S--3D--,3H,slam try in hearts
+    2CDb2D--2H--2S--3D--,3N,to play
+    2CDb2D--2H--2S--3D--,4[HS],to play
+    2CDb2D--2H--2S--,3H,4+!S 14-15 pts
+    2CDb2D--2H--2S--3H--,3S,slam try in spades
+    2CDb2D--2H--2S--3H--,3N,to play
+    2CDb2D--2H--2S--3H--,4[HS],to play
+
+    2CDb2D--,2S,4+!S; 12-15 pts; no 4-card major
+    2CDb2D--2S--,2N,relay
+    2CDb2D--2S--2N--,3C,12-13 pts
+    2CDb2D--2S--2N--,3D,14-15 pts with 0-1!D
+    2CDb2D--2S--2N--,3H,14-15 pts with 0-1!H
+    2CDb2D--2S--2N--,3S,14-15 pts with 0-1!S
+    2CDb2D--2S--2N--,3N,14-15 pts; no singleton or void
+    2CDb2D--2S--,3C,signoff
+    2CDb2D--2S--,3D,slam try in clubs
+    2CDb2D--2S--,3H,5!H game force
+    2CDb2D--2S--,3S,5!S game force
+    
+    2CDb2D--,2N,14-15 pts; no 4-card major; stoppers in majors
+    2CDb2D--2N--,3D,slam try in clubs
+    2CDb2D--2N--,3H,5!H game force
+    2CDb2D--2N--,3S,5!S game force
+
+    2CDb2D--,3C,11-12 pts with no 4-card major
+    2CDb2D--3C--,3D,slam try in clubs
+    2CDb2D--3C--,3H,5!H game force
+    2CDb2D--3C--,3S,5!S game force
+    2CDb2D--,3D,5+!D game force
+    2CDb2D--,3H,5+!H game force
+    2CDb2D--,3S,5+!S game force
+    2CDb2D--,3N,to play
+
+    2C2D,Db,11+ pts; artificial ask for hand description
+    2C2D,2H,8-11 pts; 5+!H
+    2C2D,2S,8-11 pts; 5+!S
+    2C2D,2N,puppet to 3C
+    2C2D2N--,3C,forced bid
+    2C2D2N--3C--,3D,5+!H 5+!S game force
+    2C2D2N--3C--,3H,5+!D 5+!H game force
+    2C2D2N--3C--,3S,5+!D 5+!S game force
+    2C2D,3C,6+!D invitational or better
+    2C2D,3D,6+!H invitational or better
+    2C2D,3H,6+!S invitational or better
+    2C2D,3S,6+!S 4+!H game force
+    2C2D,4C,Preemptive club raise 5-9 pts
+    2C2D,3N,To play
+    2C2D,4[HS],To play
+
+    2C2DDb--,2H,any 4-card major
+    2C2DDb--2H--,2S,which 4-card major?
+    2C2DDb--2H--2S--,2N,4+!H 10-13 pts
+    2C2DDb--2H--2S--2N--,3C,signoff
+    2C2DDb--2H--2S--2N--,3D,slam try in clubs
+    2C2DDb--2H--2S--2N--,3H,invite to game
+    2C2DDb--2H--2S--2N--,3S,slam try in hearts
+    2C2DDb--2H--2S--2N--,3N,to play
+    2C2DDb--2H--2S--2N--,4[HS],to play
+    2C2DDb--2H--2S--,3C,4+!S 10-13 pts
+    2C2DDb--2H--2S--3C--,3D,slam try in clubs
+    2C2DDb--2H--2S--3C--,3H,slam try in spades
+    2C2DDb--2H--2S--3C--,3S,invite to game
+    2C2DDb--2H--2S--3C--,3N,to play
+    2C2DDb--2H--2S--3C--,4[HS],to play
+
+    2C2DDb--2H--2S--,3D,4+!H 14-15 pts
+    2C2DDb--2H--2S--3D--,3H,slam try in hearts
+    2C2DDb--2H--2S--3D--,3N,to play
+    2C2DDb--2H--2S--3D--,4[HS],to play
+    2C2DDb--2H--2S--,3H,4+!S 14-15 pts
+    2C2DDb--2H--2S--3H--,3S,slam try in spades
+    2C2DDb--2H--2S--3H--,3N,to play
+    2C2DDb--2H--2S--3H--,4[HS],to play
+
+    2C2DDb--,2S,4+!S; 12-15 pts; no 4-card major
+    2C2DDb--2S--,2N,relay
+    2C2DDb--2S--2N--,3C,12-13 pts
+    2C2DDb--2S--2N--,3D,14-15 pts with 0-1!D
+    2C2DDb--2S--2N--,3H,14-15 pts with 0-1!H
+    2C2DDb--2S--2N--,3S,14-15 pts with 0-1!S
+    2C2DDb--2S--2N--,3N,14-15 pts; no singleton or void
+    2C2DDb--2S--,3C,signoff
+    2C2DDb--2S--,3D,slam try in clubs
+    2C2DDb--2S--,3H,5!H game force
+    2C2DDb--2S--,3S,5!S game force
+
+    2C2DDb--,2N,14-15 pts; no 4-card major; stoppers in majors
+    2C2DDb--2N--,3D,slam try in clubs
+    2C2DDb--2N--,3H,5!H game force
+    2C2DDb--2N--,3S,5!S game force
+
+    2C2DDb--,3C,11-12 pts with no 4-card major
+    2C2DDb--3C--,3D,slam try in clubs
+    2C2DDb--3C--,3H,5!H game force
+    2C2DDb--3C--,3S,5!S game force
+    2C2DDb--,3D,5+!D game force
+    2C2DDb--,3H,5+!H game force
+    2C2DDb--,3S,5+!S game force
+    2C2DDb--,3N,to play
+
+## 2D Opening
 
     2D--,2[HS],signoff
     2D--,3[CN],signoff
@@ -530,6 +696,8 @@ BBOalert,Precision
     2D2[HS]2N--,3H,14-15 pts; 4!S 3!H 1!D 5!C
     2D2[HS]2N--,3S,14-15 pts; 3!S 4!H 1!D 5!C
 
+## Puppet Stayman
+
     2N--,3C,Puppet Stayman asks for 4 or 5-card major
     2N--3C--,3D,No 5-card major; at least one 4-card major
     2N--3C--,3H,5!H
@@ -540,4 +708,178 @@ BBOalert,Precision
     2N--3C--3D--,3N,No 4-card major
     2N--3C--3D--,4C,4+!H 4+!S with slam interest
     2N--3C--3D--,4D,4+!H 4+!S without slam interest
+
+##  DONT
+    1N,Db,Single-suited hand; relays to 2!C
+    1N----,Db,Single-suited hand; relays to 2!C
+    1N,2C,Clubs and a higher suit
+    1N----,2C,Clubs and a higher suit
+    1N,2D,Diamonds and a higher suit
+    1N----,2D,Diamonds and a higher suit
+    1N,2H,Hearts and Spades
+    1N----,2H,Hearts and Spades
+    1N,2S,Single-suited spades
+    1N----,2S, Single-suited spades
+    1N----,2N,5+!C 5+!D
+    
+## After NT Interference
+
+    1NDb,2C,Stayman; 9+ pts; might not have 4-card major
+    1NDb,2D,Transfer to hearts; 5+!H
+    1NDb2D--,2H,Accept transfer
+    1NDb2D--,3H,Super-accept transfer; 4+!H and max NT hand
+    1NDb2H--,2S,Accept transfer
+    1NDb2H--,3S,Super-accept transfer; 4+!S and max NT hand
+    1NDb,2H,Transfer to spades; 5+!S
+    1NDb,2S,Transfer to clubs; 6+!C
+    1NDb2S--,2N,Not interested in 3NT
+    1NDb2S--2N--,3C,correct to !C
+    1NDb2S--2N--,3D,game forcing strength; short !D
+    1NDb2S--2N--,3H,game forcing strength; short !H
+    1NDb2S--2N--,3S,game forcing strength; short !S
+    1NDb2S--,3C,Accept transfer with interest in 3NT
+    1NDb2S--3C--,3D,game forcing strength; short !D
+    1NDb2S--3C--,3H,game forcing strength; short !H
+    1NDb2S--3C--,3S,game forcing strength; short !S
+    1NDb,2N,Transfer to diamonds; 6+!D
+    1NDb2N--,3C,Not interested in 3NT
+    1NDb2N--3C--,3D,correct to !D
+    1NDb2N--3C--,3H,game forcing strength; short !H
+    1NDb2N--3C--,3S,game forcing strength; short !S
+    1NDb2N--,3D,Accept transfer with interest in 3NT
+    1NDb2N--3D--,3H,game forcing strength; short !H
+    1NDb2N--3D--,3S,game forcing strength; short !S
+
+    1N2C,Db,Stayman; 9+ pts; might not have 4-card major
+    1N2C,2D,Transfer to hearts; 5+!H
+    1N2C2D--,2H,Accept transfer
+    1N2C2D--,3H,Super-accept transfer; 4+!H and max NT hand
+    1N2C2H--,2S,Accept transfer
+    1N2C2H--,3S,Super-accept transfer; 4+!S and max NT hand
+    1N2C,2H,Transfer to spades; 5+!S
+    1N2C,2S,Transfer to clubs; 6+!C
+    1N2C2S--,2N,Not interested in 3NT
+    1N2C2S--2N--,3C,correct to !C
+    1N2C2S--2N--,3D,game forcing strength; short !D
+    1N2C2S--2N--,3H,game forcing strength; short !H
+    1N2C2S--2N--,3S,game forcing strength; short !S
+    1N2C2S--,3C,Accept transfer with interest in 3NT
+    1N2C2S--3C--,3D,game forcing strength; short !D
+    1N2C2S--3C--,3H,game forcing strength; short !H
+    1N2C2S--3C--,3S,game forcing strength; short !S
+    1N2C,2N,Transfer to diamonds; 6+!D
+    1N2C2N--,3C,Not interested in 3NT
+    1N2C2N--3C--,3D,correct to !D
+    1N2C2N--3C--,3H,game forcing strength; short !H
+    1N2C2N--3C--,3S,game forcing strength; short !S
+    1N2C2N--,3D,Accept transfer with interest in 3NT
+    1N2C2N--3D--,3H,game forcing strength; short !H
+    1N2C2N--3D--,3S,game forcing strength; short !S
+    
+    1N2D,2[HS],natural
+    1N2H,2S,natural
+    1N2D,3D,game forcing stayman
+    1N2H,3H,game forcing stayman
+    1N2S,3S,game forcing stayman
+    1N2[DHS],3[CDHS],game forcing showing 5+ cards in suit
+    1N2[DHS],Db,takeout; 8+ pts
+    1N2[DHS],2N,9-10 pts
+    1N2[DHS],4D,Transfer to hearts
+    1N2[DHS],4H,Transfer to spades
+    
+## Two-suited Bids
+
+    1C,2C,5+!H 5+!S; 7-11 or 15-18 pts
+    1D,2D,5+!H 5+!S; 7-11 or 15-18 pts
+    1H,2H,5+!S and a minor; 7-11 or 15-18 pts
+    1H2H--,2N,Asks for minor
+    1S,2S,5+!H and a minor; 7-11 or 15-18 pts
+    1S2S--,2N,Asks for minor
+
+    1C----,2C,5+!H 5+!S; 7-11 or 15-18 pts
+    1D----,2D,5+!H 5+!S; 7-11 or 15-18 pts
+    1H----,2H,5+!S and a minor; 7-11 or 15-18 pts
+    1H----2H--,2N,Asks for minor
+    1S----,2S,5+!H and a minor; 7-11 or 15-18 pts
+    1S----2S--,2N,Asks for minor
+
+    1C,2N,5+!D 5+!H; 7-11 or 15-18 pts
+    1D,2N,5+!C 5+!H; 7-11 or 15-18 pts
+    1[HS],2N,5+!C 5+!D; 7-11 or 15-18 pts
+    1C----,2N,5+!D 5+!H; 7-11 or 15-18 pts
+    1D----,2N,5+!C 5+!H; 7-11 or 15-18 pts
+    1[HS]----,2N,5+!C 5+!D; 7-11 or 15-18 pts
+
+    ------1C,1N,5+!D 5+!H
+    ------1D,1N,5+!C 5+!H
+    ------1[HS],1N,5+!C 5+!D
+    ------1C----,1N,5+!D 5+!H
+    ------1D----,1N,5+!C 5+!H
+    ------1[HS]----,1N,5+!C 5+!D
+
+    --1C----,1N,5+!D 5+!H
+    --1D----,1N,5+!C 5+!H
+    --1[HS]----,1N,5+!C 5+!D
+    ----1C----,1N,5+!D 5+!H
+    ----1D----,1N,5+!C 5+!H
+    ----1[HS]----,1N,5+!C 5+!D
+
+    3C,4C,5+!H 5+!S
+    3D,4D,5+!H 5+!S
+    3H,4H,5+!S and a minor
+    3H4H--,4N,asks for minor
+    3S,4S,5+!H and a minor
+    3S4S--,4N,asks for minor
+    3[HS],4N,5+!C 5+!D
+    4S,4N,Any 5-5 or better hand
+
+    3C----,4C,5+!H 5+!S
+    3D----,4D,5+!H 5+!S
+    3H----,4H,5+!S and a minor
+    3H----4H--,4N,asks for minor
+    3S----,4S,5+!H and a minor
+    3S----4S--,4N,asks for minor
+    3[HS]----,4N,5+!C 5+!D
+    4S----,4N,Any 5-5 or better hand
+
+    2[DHS],4C,5+!C and 5 of a major
+    2[HS],4D,5+!D and 5 of a major
+    2D4C--,4D,Asks for major
+    2[DHS]----,4C,5+!C and 5 of a major
+    2[HS]----,4D,5+!D and 5 of a major
+    2D----4C--,4D,Asks for major
+    1H--2H,4C,5+!C 5+!S
+    1H--2H,4D,5+!D 5+!S
+    1S--2S,4C,5+!C 5+!H
+    1S--2S,4D,5+!D 5+!S
+    
+## Defense against preempts
+    
+    2D,3D,Asks for stopper for 3N
+    2H,3H,Asks for stopper for 3N
+    2S,3S,Asks for stopper for 3N
+    2D----,3D,Asks for stopper for 3N
+    2H----,3H,Asks for stopper for 3N
+    2S----,3S,Asks for stopper for 3N
+    2D,3H,6+!H 16+ pts
+    2[DH],3S,6+!S 16+ pts
+    2D----,3H,6+!H 16+ pts
+    2[DH]----,3S,6+!S 16+ pts
+
+## Support Doubles
+
+    1D--1H1S,Db,3+!H
+    1D--1HDb,Rd,3+!H
+    1D--1SDb,Rd,3+!S
+
+
+
+
+
+
+
+
+
+
+
 
