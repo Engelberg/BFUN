@@ -1,7 +1,7 @@
 BBOalert,Precision
 # Precision based on the book Standard Modern Precision
     Javascript,https://github.com/stanmaz/BBOalert/blob/master/Plugins/stanmazPlugin.js
-    Shortcut,prehi,Hi! Precision: 1C 16+; 1D may be short; 1NT 14-16 balanced; UDA\n
+    Shortcut,prehi,Hi! Precision: 1C 16+; 1D may be short; 1NT 14-16 balanced; standard signals\n
 
     Trusted
 
@@ -854,7 +854,7 @@ BBOalert,Precision
     1S--2S,4D,5+!D 5+!S
     
 ## Defense against preempts
-    
+
     2D,3D,Asks for stopper for 3N
     2H,3H,Asks for stopper for 3N
     2S,3S,Asks for stopper for 3N
@@ -871,15 +871,3 @@ BBOalert,Precision
     1D--1H1S,Db,3+!H
     1D--1HDb,Rd,3+!H
     1D--1SDb,Rd,3+!S
-
-
-
-
-
-
-
-
-
-
-
-
