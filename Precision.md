@@ -440,6 +440,40 @@ BBOalert,Precision
     1D--2[HS]--2N--,3H,minimum 5!S 5!H
     1D--2[HS]--2N--,3S,maximum 5!S 5!H
     
+##  XYZ Two-Way checkback Stayman
+    1D--1H--1[SN]--,2C,artificial invite or wants to signoff in 2D
+    1[DH]--1S--1N--,2C,artificial invite or wants to signoff in 2D
+    1D--1H--1[SN]--,2D,artificial game forcing checkback
+    1[DH]--1S--1N--,2D,artificial game forcing checkback
+    1D--1H--1[SN]--,2H,to play
+    1[DH]--1S--1N--,2H,to play
+    1D--1H--1[SN]--,2S,natural
+    1[DH]--1S-1N--,2S,natural
+    1D--1H--1[SN]--,3C,5+!H 5+!C slam interest
+    1[DH]--1S--1N--,3C,5+!S 5+!C slam interest
+    1D--1H--1[SN]--,3D,5+!H 5+!D slam interest
+    1[DH]--1S--1N--,3D,5+!S 5+!D slam interest
+    1D--1H--1[SN]--,3H,6+!H  slam interest
+    1[DH]--1S--1N--,3H,5+!S 5+!H slam interest
+    1[DH]--1S--1N--,3S,6+!S slam interest
+    1D--1H--1S--,4[CD],splinter support for spades
+
+    1D--1H--1[SN]--2C--,2D,mandatory response
+    1[DH]--1S--1N--2C--,2D,mandatory response
+    1D--1H--1[SN]--2C--2D--,2H,mild invite
+    1[DH]--1S--1N--2C--2D--,2S,mild invite
+    1D--1H--1[SN]--2C--2D--,2N,solid invite to 3N with 5+!H
+    1[DH]--1S--1N--2C--2D--,2N,solid invite to 3N with 5+!S
+    1D--1H--1[SN]--2C--2D--,3C,invite with 4!H 6+!C
+    1[DH]--1S--1N--2C--2D--,3C,invite with 4!S 6+!C
+    1D--1H--1[SN]--2C--2D--,3D,invite with 4!H 6+!D
+    1[DH]--1S--1N--2C--2D--,3D,invite with 4!S 6+!D
+    1D--1H--1[SN]--2C--2D--,3H,invite with 6+!H
+    1[DH]--1S--1N--2C--2D--,3S,invite with 6+!S
+    1D--1H--1S--2C--2D--,3S,invite with 4!S
+    1D--1H--1[SN]--2C--2D--,3N,choice of game
+    1[DH]--1S--1N--2C--2D--,3N,choice of game
+
 ##  2-over-1 for 1M openings
 
     1[HS]--,1N,forcing
