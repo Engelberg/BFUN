@@ -729,6 +729,24 @@ BBOalert,Precision
     2D2[HS]2N--3D--,3S,sets spades as suit
     2D2[HS]2N--,3H,14-15 pts; 4!S 3!H 1!D 5!C
     2D2[HS]2N--,3S,14-15 pts; 3!S 4!H 1!D 5!C
+    
+## Weak Twos
+    2[HS]--,2N,16+ pts; asks for hand description
+    2[HS]--2N--,3C,5 card suit
+    2[HS]--2N--3C--,3D,asks for hand strength
+    2[HS]--2N--3C--3D--,3H,minimum strength
+    2[HS]--2N--3C--3D--,3S,max strength without 3 cards in other major
+    2[HS]--2N--3C--3D--,3N,max strength with 3 cards in other major
+    2H--2N--3C--,3H,sign off
+    2S--2N--3C--,3S,sign off
+    2[HS]--2N--,3D,6 card suit; minimum strength
+    2H--2N--3D--,3H,sign off
+    2S--2N--3D--,3S,sign off
+    2H--2N--3D--,3S,5!S
+    2S--2N--3D--,3H,5!H
+    2[HS]--2N--,3H,6 card suit; medium strength
+    2[HS]--2N--,3S,6 card suit; max strength without 3 cards in other major
+    2[HS]--2N--,3N,6 card suit; max strength with 3 cards in other major
 
 ## Puppet Stayman
 
