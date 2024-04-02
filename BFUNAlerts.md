@@ -11,7 +11,7 @@ BBOalert,BFUN
     ,1D,11-15 pts; 4+!D
     ,1H,11-15 pts; 4+!H
     ,1S,11-15 pts; 4+!S
-    ,1N,13-15 pts; balanced
+    ,1N,12-15 pts; balanced
     ,2C,Artificial: 11-15 pts; three-suiter (4-4-4-1 or 5-4-4-0)
     ,2D,11-15 pts; 4+!C; 5+!D
     ,2H,11-15 pts; 4+!C 5+!H
