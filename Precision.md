@@ -833,7 +833,9 @@ BBOalert,Precision
     1N2D,3D,game forcing stayman
     1N2H,3H,game forcing stayman
     1N2S,3S,game forcing stayman
-    1N2[DHS],3[CDHS],game forcing showing 5+ cards in suit
+    1N2D,3[CHS],game forcing showing 5+ cards in suit
+    1N2H,3[CDS],game forcing showing 5+ cards in suit
+    1N2S,3[CDH],game forcing showing 5+ cards in suit
     1N2[DHS],Db,takeout; 8+ pts
     1N2[DHS],2N,9-10 pts
     1N2[DHS],4D,Transfer to hearts
