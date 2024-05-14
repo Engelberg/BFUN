@@ -280,7 +280,7 @@ BBOalert,BFUN
     1C--,3S,Artificial: 12-14 pts; 2!S 4!H 3!D 4!C
     1C--,3N,Artificial: 12-14 pts; 4!S 3!H 4!D 2!C
 
-    1C--1N--2C--,2N,Artificial; 0-1!H,20220418_19:42 Deal 7 robbef
+    1C--1N--2C--,2N,Artificial; 0-2!H,20220418_19:42 Deal 7 robbef
     1C--1N--2C--2N--3C--,3H,Artificial: 3!S 1!H 3!D 6!C,20220418_19:43 Deal 7 robbef
     1C--1N--2C--2N--3C--3H--3S--,3N,0-2 control pts (A=2; K=1),20220418_19:44 Deal 7 robbef
 
