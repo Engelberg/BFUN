@@ -21,8 +21,8 @@ BBOalert,Precision
 
     Untrusted
 
-    ,3C,weak preempt; 7!C
-    ,3D,weak preempt; 7!D
+    ,3C,weak preempt; 6-7!C
+    ,3D,weak preempt; 6-7!D
     ,3H,weak preempt; 7!H
     ,3S,weak preempt; 7!S
     ,3N,solid 7+ card minor suit
