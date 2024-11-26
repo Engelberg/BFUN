@@ -528,7 +528,7 @@ BBOalert,Precision
     2C--2D--2H--2S--3H--,3N,to play
     2C--2D--2H--2S--3H--,4[HS],to play
 
-    2C--2D--,2S,4+!S; 12-15 pts; no 4-card major
+    2C--2D--,2S,12-15 pts; no 4-card major
     2C--2D--2S--,2N,relay
     2C--2D--2S--2N--,3C,12-13 pts
     2C--2D--2S--2N--,3D,14-15 pts with 0-1!D
@@ -606,7 +606,7 @@ BBOalert,Precision
     2CDb2D--2H--2S--3H--,3N,to play
     2CDb2D--2H--2S--3H--,4[HS],to play
 
-    2CDb2D--,2S,4+!S; 12-15 pts; no 4-card major
+    2CDb2D--,2S,12-15 pts; no 4-card major
     2CDb2D--2S--,2N,relay
     2CDb2D--2S--2N--,3C,12-13 pts
     2CDb2D--2S--2N--,3D,14-15 pts with 0-1!D
