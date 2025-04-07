@@ -7,7 +7,7 @@ BBOalert,Precision
 
 ## Openings
 
-    Option,Precision,enigmisto+bhohe,enigmisto+billhohe
+    Option,Precision,enigmisto+bhohe,enigmisto+billhohe,enigmisto+RobbEf
     ,1C,Artificial 16+ pts
     ,1D,11-15 pts; 2+!D; denies 5-card major
     ,1H,11-15 pts; 5+!H
