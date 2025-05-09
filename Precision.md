@@ -38,24 +38,12 @@ BBOalert,Precision
     1N--2H--,2S,Accept transfer
     1N--2H--,3S,Super-accept transfer; 4+!S and max NT hand
     1N--,2H,Transfer to spades; 5+!S
-    1N--,2S,Transfer to clubs; 6+!C
-    1N--2S--,2N,Not interested in 3NT
-    1N--2S--2N--,3C,correct to !C
-    1N--2S--2N--,3D,game forcing strength; short !D
-    1N--2S--2N--,3H,game forcing strength; short !H
-    1N--2S--2N--,3S,game forcing strength; short !S
-    1N--2S--,3C,Accept transfer with interest in 3NT
-    1N--2S--3C--,3D,game forcing strength; short !D
-    1N--2S--3C--,3H,game forcing strength; short !H
-    1N--2S--3C--,3S,game forcing strength; short !S
-    1N--,2N,Transfer to diamonds; 6+!D
-    1N--2N--,3C,Not interested in 3NT
-    1N--2N--3C--,3D,correct to !D
-    1N--2N--3C--,3H,game forcing strength; short !H
-    1N--2N--3C--,3S,game forcing strength; short !S
-    1N--2N--,3D,Accept transfer with interest in 3NT
-    1N--2N--3D--,3H,game forcing strength; short !H
-    1N--2N--3D--,3S,game forcing strength; short !S
+    1N--,2S,Transfer to minor suit
+    1N--2S--,3C,Accept transfer; partner will pass or correct
+    1N--2S--3C--,3D,transfer was to diamonds
+    1N--,2N,Invite to 3NT
+    1N--,3C,Invite to 3NT with strong 6-card club suit
+    1N--,3D,Invite to 3NT with strong 6-card diamond suit
 
 ##  1C Opening
 
