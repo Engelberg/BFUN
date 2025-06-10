@@ -31,7 +31,7 @@ BBOalert,Precision
 
 ## 1N Opening
 
-    1N--,2C,Stayman; 9+ pts; might not have 4-card major
+    1N--,2C,Stayman; 9+ pts
     1N--,2D,Transfer to hearts; 5+!H
     1N--2D--,2H,Accept transfer
     1N--2D--,3H,Super-accept transfer; 4+!H and max NT hand
