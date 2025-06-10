@@ -267,7 +267,7 @@ BBOalert,Precision
     1CDbRd--,1N,17-19 pts; balanced
     1CDbRd--,2N,22-24 pts; balanced
     1CDbRd--,3N,25-27 pts; balanced
-    1CDbRd--1N--,2C,Stayman; 6+ pts; might not have 4-card major
+    1CDbRd--1N--,2C,Stayman; 6+ pts
     1CDbRd--1N--,2D,Transfer to hearts; 5+!H
     1CDbRd--1N--,2H,Transfer to spades; 5+!S
     1CDbRd--1N--,2S,Transfer to clubs; 6+!C
@@ -299,7 +299,7 @@ BBOalert,Precision
     1CDb----,1N,17-19 pts; balanced
     1CDb----,2N,22-24 pts; balanced
     1CDb----,3N,25-27 pts; balanced
-    1CDb----1N--,2C,Stayman; 6+ pts; might not have 4-card major
+    1CDb----1N--,2C,Stayman; 6+ pts
     1CDb----1N--,2D,Transfer to hearts; 5+!H
     1CDb----1N--,2H,Transfer to spades; 5+!S
     1CDb----1N--,2S,Transfer to clubs; 6+!C
@@ -764,7 +764,7 @@ BBOalert,Precision
     
 ## After NT Interference
 
-    1NDb,2C,Stayman; 9+ pts; might not have 4-card major
+    1NDb,2C,Stayman; 9+ pts
     1NDb,2D,Transfer to hearts; 5+!H
     1NDb2D--,2H,Accept transfer
     1NDb2D--,3H,Super-accept transfer; 4+!H and max NT hand
@@ -790,7 +790,7 @@ BBOalert,Precision
     1NDb2N--3D--,3H,game forcing strength; short !H
     1NDb2N--3D--,3S,game forcing strength; short !S
 
-    1N2C,Db,Stayman; 9+ pts; might not have 4-card major
+    1N2C,Db,Stayman; 9+ pts
     1N2C,2D,Transfer to hearts; 5+!H
     1N2C2D--,2H,Accept transfer
     1N2C2D--,3H,Super-accept transfer; 4+!H and max NT hand
